@@ -421,6 +421,10 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	background-color: #292929;
 }
 
+#chatContainer .highlighted-chat:hover{
+	background-color: #292929 !important;;
+}
+
 /* PARTLY CHAT BUT TABLES AS WELL */
 
 .mdl-data-table{
@@ -863,6 +867,14 @@ a:hover{
 
 .col-md-8 span{
 	color: var(--text) !important;;
+}
+
+
+/* LATEST CHANGES */
+
+/* HOVER EFFECT */
+.kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-text, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-text, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-text {
+    color: #7ca2ff;
 }
 
 
