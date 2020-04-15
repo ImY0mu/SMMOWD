@@ -30,6 +30,8 @@ body:after {
     height: 350px;
 }
 
+
+
 /* ----------- TOP MENU NAVIGATION ----------- */
 
 .navbar{
@@ -843,7 +845,7 @@ a:hover{
     color: var(--text) !important;
 }
 
-.active, .collapsible:hover {
+.container-two .container .active, .container-two .container .collapsible:hover {
     background-color: #2b2b2b !important;
 }
 
@@ -866,7 +868,11 @@ a:hover{
 
 
 .col-md-8 span{
-	color: var(--text) !important;;
+	color: var(--text) !important;
+}
+
+.text-center span{
+	color: var(--text) !important;
 }
 
 
