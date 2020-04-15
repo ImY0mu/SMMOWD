@@ -384,6 +384,20 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	background-color: white;
 }
 
+#stepUsercountContainer div{
+    background: #2b2b2b !important;
+}
+
+#stepUsercountContainer img{
+ 	filter: invert(85%);
+}
+
+#stepUsercountContainer span{
+ 	color: var(--text) !important;
+}
+
+
+
 
 /* ----------- SIDENAV CHAT ----------- */
 
