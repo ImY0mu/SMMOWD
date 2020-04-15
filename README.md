@@ -14,7 +14,7 @@ This repository exists for custom dark mode for simpleMMO web app. It may be imp
 #### 3. Application (once you are the Stylish edit section)
 ##### • At the top left enter any name (example: SMMO Darkmode) and tick Enabled.
 ##### • Copy content of style.css file (CTRL + A to select everything [you gotta open edit function if you open it at the repository]) and Paste it into the Code 1 section.
-##### • At the bottom, change Applies to, to "URLs on domain" and enter webapp url without http/s and /.
+##### • At the bottom, change Applies to, to "URLs on domain" and enter web.simple-mmo.com
 ##### • At the top left Save it.
 
 ## How to update
