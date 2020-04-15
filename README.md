@@ -1,5 +1,6 @@
 # SMMO webapp - custom dark mode
 This repository exists for custom dark mode for simpleMMO web app. It may be implemented in the game once.
+#### Created by Y0mu#0703
 
 
 ## Guide
@@ -12,7 +13,7 @@ This repository exists for custom dark mode for simpleMMO web app. It may be imp
 #### • Left click on the Stylish icon at the extension/addon bar, click on 3 dots at top right and select Create New Style
 ### 3. Application (once you are the Stylish edit section)
 #### • At the top left enter any name (example: SMMO Darkmode) and tick Enabled.
-#### • Copy content of style.css file and Paste it into the Code 1 section.
+#### • Copy content of style.css file (CTRL + A to select everything) and Paste it into the Code 1 section.
 #### • At the bottom, change Applies to, to "URLs on domain" and enter webapp url without http/s and /.
 #### • At the top left Save it.
 ### It should work now.
