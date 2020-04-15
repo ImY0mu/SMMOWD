@@ -72,6 +72,18 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	background-color: #ffb822!important;
 }
 
+.kt-infobox .kt-infobox__title{/* Dashboard - title of updates */
+	color: var(--link) !important;
+}
+
+.kt-infobox .kt-infobox__subtitle{/* Dashboard - subtitle of updates */
+	color: var(--link) !important;
+}
+
+.kt-infobox .kt-infobox__body .kt-infobox__section .kt-infobox__content{/* Dashboard - content of updates */
+	color: var(--text) !important;
+}
+
 .kt-label-bg-color-1 {/* OVERRIDE FIXES - SILVER CHEST */
     background-color: #a2a5b9!important;
 }
