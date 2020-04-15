@@ -185,6 +185,10 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }*/
 
 
+.kt-portlet.kt-portlet--head-overlay.kt-portlet--head-lg .kt-portlet__body .kt-widget27 .kt-widget27__visual{
+	background: #384c8e !important;
+}
+
 .kt-subheader__title{
 	color: var(--widget-title) !important;
 }
@@ -701,7 +705,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .col-md-8 .demo-card-wide{
-	    background: #1d1d1d;
+	    background: #3b3b3b;
 }
 
 
@@ -815,6 +819,10 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     border: #3854af;
 }
 
+.label-info {
+    background-color: #008ebd;
+}
+
 /* BASIC LINKS */
 a{
 	color: #828ff5;
@@ -823,3 +831,38 @@ a{
 a:hover{
 	color: #5262da;
 }
+
+/* FAQ */
+
+.collapsible{
+	background-color: #353535 !important;
+    color: var(--text) !important;
+}
+
+.active, .collapsible:hover {
+    background-color: #2b2b2b !important;
+}
+
+.content{
+    background-color: #5d5d5d !important;
+    color: var(--text) !important;
+}
+
+.container div h2{
+	color: var(--link) !important;
+}
+
+.container div{
+	color: var(--text) !important;
+}
+
+.col-md-8 div .a-no-style h4{
+	color: var(--text) !important;
+}
+
+
+.col-md-8 span{
+	color: var(--text) !important;;
+}
+
+
