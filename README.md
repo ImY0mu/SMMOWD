@@ -3,7 +3,7 @@ This repository exists for custom dark mode for simpleMMO web app. It may be imp
 #### Created by Y0mu#0703
 
 
-## Guide
+## Installation guide
 ### 1. Installation
 #### • Install the Stylish extension/addon
 ##### Chrome: https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe
@@ -16,4 +16,7 @@ This repository exists for custom dark mode for simpleMMO web app. It may be imp
 #### • Copy content of style.css file (CTRL + A to select everything [you gotta open edit function if you open it at the repository]) and Paste it into the Code 1 section.
 #### • At the bottom, change Applies to, to "URLs on domain" and enter webapp url without http/s and /.
 #### • At the top left Save it.
-### It should work now.
+
+## How to update
+#### • Download the updated style.css or open it in the repository
+#### • Override the code in Code 1 section with the updated style.css file's content (if you do not know how to get there, read the installation guide above)
