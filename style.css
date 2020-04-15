@@ -687,17 +687,6 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	    background: #1d1d1d;
 }
 
-.mdl-textfield__input{
-    background: #3b3b3b;
-    color: var(--text) !important;
-}
-
-.mdl-textfield__label{
-    color: var(--text) !important;
-}
-
-
-
 
 /* ----------- DISCUSSION BOARDS ----------- */
 
@@ -774,6 +763,23 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	color: rgba(234, 226, 226, 0.26) !important;
 }
 
+
+.mdl-radio__label{
+	color: var(--text) !important;
+}
+
+.mdl-textfield__input{
+    background: #3b3b3b;
+    color: var(--text) !important;
+}
+
+.mdl-textfield__label{
+    color: var(--text) !important;
+}
+
+.mdl-radio__outer-circle{
+	    border: 2px solid var(--text);
+}
 
 /* OTHER */
 
