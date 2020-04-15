@@ -1,6 +1,7 @@
 :root {
     --body: #232323;
     --text: #d0d0d0;
+    --text-sub: #969696;
     --widget: #353535;
     --button: rgb(37, 37, 37);
     --widget-title: #5867dd;
@@ -449,15 +450,15 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     border-color: #4a61ad !important;
 }
 
-.btn-success, .btn-success.focus, .btn-success:focus, .btn-success:active{
+.btn-success{
 	background-color: #2b6543 !important;
     color: var(--text) !important;
     border-color: #2b6543 !important;
 }
 
-.btn-success:hover{
-	background-color: #239051;
-    border-color: #239051;
+.btn-success:hover, .btn-success.focus, .btn-success:focus, .btn-success:active{
+	background-color: #239051 !important;
+    border-color: #239051 !important;
 }
 
 .btn-info {
@@ -491,6 +492,28 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 .btn-warning:hover{
     background-color: #c39532;
     border-color: #c39532;
+}
+
+.btn-brand {
+    background-color: #2b4a98;
+    border-color: #2b4a98;
+    color: var(--text) !important;
+}
+
+.btn-brand:hover {
+    background-color: #3659b1;
+    border-color: #3659b1;
+}
+
+.btn-primary {
+    background-color: #222e90;
+    border-color: #222e90;
+    color: var(--text) !important;
+}
+
+.btn-primary:hover {
+    background-color: #3543b5 !important;
+    border-color: #3543b5 !important;
 }
 
 .btn.disabled, .btn:disabled {
@@ -698,6 +721,10 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	color: var(--text);
 }
 
+.kt-nav.kt-nav--bold .kt-nav__item .kt-nav__link .kt-nav__link-text small{
+	color: var(--text-sub);
+}
+
 .kt-nav .kt-nav__item.active>.kt-nav__link, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link {
     background-color: rgba(255, 255, 255, 0.08);
 }
@@ -721,4 +748,19 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 .not-active:hover {
     background-color: #292929 !important;
+}
+
+/* ALERTS */
+.alert.alert-success{
+	background: #2c867c;
+    border: 1px solid #2c867c;
+}
+
+/* BASIC LINKS */
+a{
+	color: #828ff5;
+}
+
+a:hover{
+	color: #5262da;
 }
