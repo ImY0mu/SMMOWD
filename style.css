@@ -445,6 +445,16 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 
+.mdl-menu__outline{
+	background-color: var(--body) !important;
+    color: var(--text);
+}
+
+.mdl-card__actions{
+	color: var(--text) !important;
+}
+
+
 /* ----------- DEFAULT BUTTONS SETTINGS ----------- */
 .cta{
 	color: var(--text) !important;
@@ -479,6 +489,11 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     border-color: #239051 !important;
 }
 
+.btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
+    color:var(--text) !important;
+    background: #3159bd;
+    border-color: #3159bd;
+}
 .btn-info {
     background-color: #384c8e;
     border-color: #384c8e;
