@@ -456,6 +456,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     color: var(--text);
 }
 
+/* REMOVED as the LOADER ON CONFIRM GETS BROKEN
 .swal2-confirm{
 	background-color: #384c8e !important;
     border-color: #384c8e !important;
@@ -465,6 +466,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	background-color: #4a61ad !important;
     border-color: #4a61ad !important;
 }
+*/
 
 .btn-success{
 	background-color: #2b6543 !important;
