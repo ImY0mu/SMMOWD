@@ -1,0 +1,712 @@
+:root {
+    --body: #232323;
+    --text: #d0d0d0;
+    --widget: #353535;
+    --button: rgb(37, 37, 37);
+    --widget-title: #5867dd;
+    --popup: #353535;
+    --popup-title: #5867dd;
+    --popup-footer: #5867dd;
+    --link: #5867dd;
+    --link-hover: #a7b1ff;
+}
+
+body{
+    background-color: var(--body) !important;
+}
+
+body:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.48);
+}
+
+/* ----------- TOP MENU NAVIGATION ----------- */
+
+.navbar{
+background-color: rgba(0, 0, 0, 0.30) !important;
+}
+
+.dropdown-menu{
+	background-color: var(--body) !important;
+}
+
+.dropdown-menu .dropdown-item{
+	color: var(--text) !important;
+}
+
+.dropdown-item:focus, .dropdown-item:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown-menu .kt-notification{
+	background-color: var(--body) !important;
+}
+
+.dropdown-menu .kt-notification a .kt-notification__item-details .kt-notification__item-title, .dropdown-menu .kt-notification a .kt-notification__item-details .kt-notification__item-time {
+	color: var(--text) !important;
+}
+
+.dropdown-menu .kt-notification .kt-notification__item:hover{
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ----------- DEFAULT KT SETTINGS ----------- */
+.kt-footer{/*Footer - Text Color and Background-color*/
+    background-color: var(--body) !important;
+    color: var(--text) !important;
+}
+
+.kt-portlet{/*Dashboard - Text Color and Background-color*/
+    background-color: var(--widget) !important;
+    color: var(--text) !important;
+}
+
+.kt-bg-warning{/* OVERRIDE FIXES - GOLD CHEST */
+	background-color: #ffb822!important;
+}
+
+.kt-label-bg-color-1 {/* OVERRIDE FIXES - SILVER CHEST */
+    background-color: #a2a5b9!important;
+}
+
+.kt-widget24__title, .kt-widget24__desc, .kt-widget24__change{/*Dashboard - Widget text*/
+	color: var(--text) !important;
+}
+
+.kt-widget24 a, .kt-widget24 a span{/*Dashboard - Widget Links color (guild/job)*/
+	color: var(--link) !important;
+}
+
+.kt-widget24 a:hover, .kt-widget24 a span:hover{/*Dashboard - Widget Links color on hover (guild/job)*/
+	color: var(--link-hover) !important;
+}
+
+.kt-widget24 span, .kt-widget24 div{/*Dashboard - Widget*/ 
+    color:var(--text) !important;
+}
+
+.kt-widget.kt-widget--user-profile-2 .kt-widget__body .kt-widget__content .kt-widget__stats .kt-widget__details .kt-widget__title{/*Dashboard - Widget title (gold, diamonds, steps, etc.)*/
+	color: var(--link) !important;
+}
+
+.kt-widget.kt-widget--user-profile-2 .kt-widget__body .kt-widget__content .kt-widget__stats .kt-widget__details .kt-widget__value{/*Dashboard - Widget variables (gold, diamonds, steps, etc.)*/
+	color: var(--text) !important;
+}
+
+.kt-iconbox--animate:after{/*Dashboard - Animation - upper part*/
+	background-color: #313131 !important;
+}
+
+.kt-iconbox--animate:before{/*Dashboard - Animation - bottom part*/
+	background-color: #000000 !important;
+}
+
+.kt-iconbox__title a{/*Dashboard - Animation - title color*/
+    color: var(--widget-title) !important;
+}
+
+.kt-iconbox__content{/*Dashboard - Animation - sub title color*/
+    color:var(--text) !important;
+}
+
+
+.kt-grid-nav__item:hover{/*Dashboard - Items - hover color*/
+    background-color: rgba(242, 242, 242, 0.07) !important;
+}
+
+.kt-grid-nav__title, .kt-grid-nav__desc{/*Dashboard - Items - text color*/
+    color: var(--text) !important;
+}
+
+.kt-portlet__head-title{/*Dashboard - Widget - Title - text color*/
+    color: var(--widget-title) !important;
+}
+
+.col-xs-12 .selectableRow .col-xs-12{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
+    color: var(--text) !important;
+}
+
+.fullPanelTwo .selectableRow .col-xs-12 .col-xs-8 span:nth-child(3){/*Player Market - Rows - text color*/
+    color: var(--text) !important;
+}
+
+.fullPanelTwo .selectableRow .col-xs-12 .col-xs-4 span{/*Player Market - Rows - text color*/
+    color: var(--text) !important;
+}
+
+.pull-right{/*Player Market - Rows - text color*/
+    color: var(--text) !important;
+}
+
+
+
+
+.selectableRow span:nth-child(4), .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
+    color: var(--text) !important;
+}
+
+.selectableRow:hover{/*Dashboard - Lists - Rows - hover effect (Tasks, Inventory, etc.)*/
+    background-color: rgba(242, 242, 242, 0.07) !important;
+}
+
+.container .selectableRow{
+    color: var(--text) !important;
+    background-color: #333333;
+}
+
+.container .selectableRow:hover{
+    background-color: #5d5d5d !important;
+}
+
+/*.kt-portlet__body div span{
+    color: var(--text) !important;
+}*/
+
+
+.kt-subheader__title{
+	color: var(--widget-title) !important;
+}
+
+
+/*Dashboard - Speech buble*/
+.kt-portlet .speech-bubble{
+    color: rgb(255, 255, 255);
+    background: #4a4a4a;
+}
+
+.kt-portlet .speech-bubble:after{
+    border-top-color: #4a4a4a;	
+}
+
+
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__info .kt-widget31__username {/* GANE STATS */
+    color: #5771de;
+}
+
+.kt-widget--user-profile-3 .kt-widget__username{/* ONLINE PLAYERS - USERNAME */
+	color: #5771de !important;
+}
+
+.kt-widget--user-profile-3 .kt-widget__title{ /* ONLINE PLAYERS - TITLE */
+	color: #5771de !important;
+}
+
+.kt-widget--user-profile-3 .kt-widget__value, .kt-widget--user-profile-3 .kt-widget__desc{ /* ONLINE PLAYERS - value + desc */
+	color: var(--text) !important;
+}
+
+/* DIAMONDS - Buy Diamonds */
+
+.kt-pricing-1 .kt-pricing-1__items{
+	background-color: var(--widget) !important;
+}
+
+
+.kt-pricing-1 .kt-pricing-1__hexagon1:after{
+	    border-top: 7.5rem solid #1d1d1d !important;
+}
+
+.kt-pricing-1 .kt-pricing-1__hexagon1:before{
+	    border-bottom: 7.5rem solid #1d1d1d !important;
+}
+
+.kt-pricing-1  .kt-pricing-1__hexagon2:after{
+	    border-top: 3.71rem  solid #505050 !important;
+}
+
+.kt-pricing-1 .kt-pricing-1__hexagon2:before{
+	    border-bottom: 3.71rem solid #505050 !important;
+}
+
+.kt-pricing-1 .kt-pricing-1__price{
+	color: var(--link) !important;
+}
+
+.kt-pricing-1 .kt-pricing-1__subtitle {
+    color: #dfe221 !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__head{
+    background-color: #254858 !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__items {
+	background-color: var(--widget) !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__subtitle {
+    color: #dfe221 !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__features span{
+	color: var(--text) !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__price{
+	color: var(--link) !important;
+}
+
+
+.kt-pricing-2 .kt-pricing-2__hexagon:before{
+    border-bottom: 5.71rem solid #505050 !important;
+}
+
+.kt-pricing-2 .kt-pricing-2__hexagon:after{
+	border-top: 5.71rem solid #505050 !important;
+}
+
+#weekCountDown{/* AVATAR STORE WEEK COUNT DOWN */
+	color: var(--link) !important;
+}
+
+
+.kt-notification-v2 .kt-notification-v2__item:hover {
+    background-color: rgba(242, 242, 242, 0.07) !important;
+}
+
+.kt-notification-v2 .kt-notification-v2__item-title{
+	color: var(--link) !important;
+}
+
+.kt-notification-v2 .kt-notification-v2__item-desc{
+	color: var(--text) !important;
+}
+
+
+.kt-widget.kt-widget--user-profile-4 .kt-widget__head .kt-widget__content .kt-widget__section .kt-widget__username{
+	color: var(--link) !important;
+}
+
+/* QUESTS */
+.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__title{
+	color: var(--link) !important;
+}
+
+.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__desc{
+	color: var(--text) !important;
+}
+
+	/* BATTLE ARENA */
+.kt-callout .kt-callout__body .kt-callout__content .kt-callout__title{
+	color: var(--link) !important;
+}
+
+.kt-callout .kt-callout__body .kt-callout__content .kt-callout__desc{
+	color: var(--text) !important;
+}
+
+
+.kt-callout--diagonal-bg:after{
+	background-color: #151515 !important;
+}
+
+.kt-iconbox--animate-slower:after{/*BATTLE ARENA - Animation - upper part*/
+	background-color: #313131 !important;
+}
+
+.kt-iconbox--animate-slower:before{/*BATTLE ARENA - Animation - bottom part*/
+	background-color: #000000 !important;
+}
+
+.kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__desc{
+	color: var(--link) !important;
+}
+
+.kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__value{
+	color: var(--text) !important;
+}
+
+.kt-widget12 .kt-widget12__stat{
+	color: var(--text) !important;
+}
+
+.kt-widget12 .kt-widget15__text span{
+    color: var(--link) !important;
+}
+.kt-widget12 .kt-widget15__text{
+	color: var(--text) !important;
+}
+
+.kt-font-dark{
+	color: var(--link) !important;
+}
+/* ----------- TRAVEL ----------- */
+
+
+.div-travel-text{
+	background-color: #2b2b2b;
+    color: var(--text) !important;
+}
+
+.notice{
+	background-color: #2b2b2b;
+    color: var(--text) !important;
+}
+
+.notice u{
+	color: var(--link) !important;
+}
+
+.reward-notice span{
+	filter: brightness(110%);
+}
+
+#guildBlock{
+	background-color: #2b2b2b !important;
+    color: var(--text) !important;
+}
+
+#guildBlock div{
+    color: var(--text) !important;
+}
+
+#guildBlock .link-divider{
+	background-color: white;
+}
+
+
+/* ----------- SIDENAV CHAT ----------- */
+
+#mySidenav{
+    background-color: #1d1d1d;
+    border-left: 1px solid rgb(0, 0, 0) !important;
+}
+
+#chatText{
+	background-color: rgba(95, 95, 95, 0.45);
+    color: var(--text);
+}
+
+#chatContainer .highlighted-chat{
+	background-color: #292929;
+}
+
+/* PARTLY CHAT BUT TABLES AS WELL */
+
+.mdl-data-table{
+	background-color: #3a3a3a;
+    color: var(--text);
+}
+
+.mdl-data-table th{
+    color: var(--text);
+}
+
+.mdl-data-table tr:hover{
+    background-color: rgba(238, 238, 238, 0.06) !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd){
+	background-color: rgba(33, 33, 33, 0.88);
+}
+
+.table-striped td{
+	color: var(--text);
+}
+
+.table-striped th{
+	color: var(--widget-title);
+}
+
+
+/* ----------- DEFAULT BUTTONS SETTINGS ----------- */
+.cta{
+	color: var(--text) !important;
+    background-color: var(--button);
+}
+
+.cta-success{
+    background-color: #2b6543;
+    color: var(--text);
+}
+
+.swal2-confirm{
+	background-color: #384c8e !important;
+    border-color: #384c8e !important;
+}
+
+.swal2-confirm:hover{
+	background-color: #4a61ad !important;
+    border-color: #4a61ad !important;
+}
+
+.btn-success, .btn-success.focus, .btn-success:focus, .btn-success:active{
+	background-color: #2b6543 !important;
+    color: var(--text) !important;
+    border-color: #2b6543 !important;
+}
+
+.btn-success:hover{
+	background-color: #239051;
+    border-color: #239051;
+}
+
+.btn-info {
+    background-color: #384c8e;
+    border-color: #384c8e;
+    color: var(--text);
+}
+
+.btn-info:hover{
+    background-color: #4a61ad;
+    border-color: #4a61ad;
+}
+
+.btn-danger {
+    background-color: #982d51;
+    border-color: #982d51;
+    color: var(--text);
+}
+
+.btn-danger:hover{
+    background-color: #bf3b67;
+    border-color: #bf3b67;
+}
+
+.btn-warning {
+    background-color: #a77d26;
+    border-color: #a77d26;
+    color: var(--text) !important;
+}
+
+.btn-warning:hover{
+    background-color: #c39532;
+    border-color: #c39532;
+}
+
+.btn.disabled, .btn:disabled {
+    opacity: .65;
+    background-color: #b9b9b9;
+    color: black;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
+    background-color: rgb(146, 46, 80);
+}
+
+
+
+/* ----------- DEFAULT SWAL SETTINGS ----------- */
+.swal2-popup{
+	background-color: var(--popup);
+}
+
+.swal2-content{
+	color: var(--text) !important;
+}
+
+.swal2-content div, .swal2-content div .row span{
+	color: var(--text) !important;
+}
+
+.swal2-content div span{
+	color: var(--widget-title) !important;
+}
+
+.swal2-popup .links .selectableRow{
+	color: var(--text) !important;
+}
+
+.swal2-popup .links .selectableRow:hover{
+    background-color: rgba(242, 242, 242, 0.07) !important;
+}
+
+.swal2-title, .swal2-title a{
+	color: var(--popup-title) !important;
+}
+
+.swal2-footer a{
+	color: var(--popup-link);
+}
+
+.swal2-footer {
+	color: var(--popup-footer);
+}
+
+.swal2-footer a:hover{
+	color: var(--popup-link-hover);
+}
+
+.swal2-validation-message{
+    background-color: #4a4a4a !important;
+}
+
+/* ----------- TOWN ----------- */
+
+.text-content{/*Bulletinboard - Content - text color*/
+	color: var(--text) !important;
+}
+
+.row-divider, .row-end{
+	background-color: transparent;
+}
+
+
+
+.faded{
+	color: rgba(255, 255, 255, 0.44);
+}
+
+.faded {
+    background: rgba(243, 243, 243, 0.08) !important;
+}
+
+
+.middle input[type="radio"]:checked + .box {/* 3 CUPS - Selected box */
+    background-color: #0b1e21 !important;
+}
+
+.middle .box{
+    background-color: #252525 !important;
+}
+
+
+
+/* CHARACTER */
+
+.kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item{
+	color: var(--text) !important;
+}
+
+.kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item:hover{
+ 	background-color: rgba(242, 242, 242, 0.07) !important;
+}
+
+.kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item.kt-widget__item--active{
+	background: #212121;
+}
+
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__info .kt-widget31__text{
+	color: var(--text) !important;
+}
+
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__progress .kt-widget31__stats span:first-child{
+	color: var(--text) !important;
+}
+
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__progress .kt-widget31__stats span{
+	color: var(--link) !important;
+}
+
+/* INBOX */
+
+.kt-widget.kt-widget--users .kt-widget__item .kt-widget__info .kt-widget__section .kt-widget__username{
+	color: var(--link) !important;
+}
+
+.kt-widget.kt-widget--users .kt-widget__item .kt-widget__info .kt-widget__desc{
+	color: var(--text) !important;
+}
+
+.kt-widget.kt-widget--users .kt-widget__item .kt-widget__action .kt-widget__date {
+    color: #b6b9c7;
+}
+
+
+#kt_chat_content h4{
+	color: var(--text);
+}
+
+#kt_chat_content span{
+	color: var(--text) !important;
+}
+
+/*INBOX - Speech buble*/
+.kt-portlet .speech-bubble-them{
+    color: rgb(255, 255, 255);
+    background: #4a4a4a;
+}
+
+.kt-portlet .speech-bubble-them:after{
+    border-right-color: #4a4a4a;	
+}
+
+.kt-portlet .speech-bubble-you{
+    color: rgb(255, 255, 255);
+}
+
+
+/* ----------- DISCUSSION BOARDS ----------- */
+
+.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__stats .kt-widget5__number{/* number above posts  */
+	color: var(--link) !important;
+}
+
+/* ----------- PLAYER PROFILE ----------- */
+
+.kt-grid__item .mb-2 .col-xs-12 .mdl-data-table td span{
+	color: yellow !important;
+}
+
+.kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__title{
+	color: var(--link) !important;
+}
+
+.kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__desc{
+	color: var(--text) !important;
+}
+
+
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__progress .kt-widget31__stats span{
+	color: var(--text) !important;
+}
+
+/* PLAYER PROFILE - INVENTORY */
+
+#equipmentViewer table{
+	background-color: var(--widget);
+}
+
+.kt-app__content .fullPanelTwo {
+	background-color: var(--widget);
+}
+
+
+#awardViewer .fullPanelTwo{
+	background-color: var(--widget) !important;
+}
+
+
+
+.kt-app__content .fullPanelTwo span{
+	color: var(--text);
+}
+
+/* ----------- PREFERENECES ----------- */
+
+
+.kt-nav.kt-nav--bold .kt-nav__item .kt-nav__link .kt-nav__link-text{
+	color: var(--text);
+}
+
+.kt-nav .kt-nav__item.active>.kt-nav__link, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.kt-nav.kt-nav--v3 .kt-nav__item:hover{
+	background-color: transparent;
+}
+
+.kt-portlet__body .col-md-8 .panel .mdl-card__title-text{
+	color: var(--link);
+}
+
+/* ----------- TEXT FIELDS (INPUTS) ----------- */
+
+.mdl-textfield__label{
+	color: rgba(234, 226, 226, 0.26) !important;
+}
+
+
+/* OTHER */
+
+.not-active:hover {
+    background-color: #292929 !important;
+}
