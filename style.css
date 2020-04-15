@@ -468,12 +468,12 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 /* ----------- DEFAULT BUTTONS SETTINGS ----------- */
 .cta{
 	color: var(--text) !important;
-    background-color: var(--button);
+    background-color: var(--button) !important;
 }
 
 .cta-success{
-    background-color: #2b6543;
-    color: var(--text);
+    background-color: #2b6543 !important;
+    color: var(--text) !important;
 }
 
 /* REMOVED as the LOADER ON CONFIRM GETS BROKEN
@@ -883,4 +883,14 @@ a:hover{
     color: #7ca2ff;
 }
 
+
+
+/* SIDENAV */
+
+#mobile_side_menu{
+	background-color: var(--body) !important;
+}
+#mobile_side_menu .kt-nav {
+    background-color: var(--body);
+}
 
