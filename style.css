@@ -1,16 +1,118 @@
 :root {
-    --body: #232323;
-    --text: #d0d0d0;
-    --text-sub: #969696;
-    --widget: #353535;
-    --button: rgb(37, 37, 37);
-    --widget-title: #5867dd;
-    --popup: #353535;
-    --popup-title: #5867dd;
-    --popup-footer: #5867dd;
-    --link: #5867dd;
-    --link-hover: #a7b1ff;
-    --item-hover: rgba(255, 255, 255, 0.1);
+    /* Default colors */
+    --navbar: rgba(0, 0, 0, 0.30);  /* rgba(0, 0, 0, 0.30); */
+    --body: #232323; /* #232323 */
+    --text: #d0d0d0; /* #d0d0d0 */
+    --text-sub: #969696; /* #969696 */
+    --link: #5867dd; /* #5867dd */
+    --link-hover: #a7b1ff; /* #a7b1ff */
+    --player: #6d79d6;
+    --title: #5867dd; /* #5867dd  #8ad055*/
+    --title-sub: #d0d0d0;
+    --icon: var(--title);
+    
+    
+    
+    /* buttons */
+    --button-dark: rgb(37, 37, 37); /* rgb(37, 37, 37) */
+    --button-success: #2b6543; /* 2b6543 */
+    --button-success-hover: #239051; /* #239051 */
+    --button-warning: #a77d26; /* #a77d26 */
+    --button-warning-hover: #c39532; /* #c39532 */
+    --button-info: #4a61ad; /* 4a61ad */
+    --button-info-hover: #384c8e; /* #384c8e */
+    --button-danger: #982d51; /* #bf3b67 */
+    --button-danger-hover: #bf3b67; /* ##bf3b67 */
+    --button-primary: #222e90; /* #222e90 */
+    --button-primary-hover: #3543b5; /* #3543b5 */
+    --button-brand: #2b4a98; /* 2b4a98 */
+    --button-brand-hover: #3659b1; /* #3659b1 */
+
+    --button-disabled: #b9b9b9; /* #b9b9b9 */
+
+    /* popup */
+    --popup: #353535; /* #353535 */
+    --popup-title: #5867dd; /* #5867dd */
+    --popup-footer: #5867dd; /* #5867dd */
+
+    /* alerts */
+    
+    
+    /* Widgets */
+    --widget: #353535; /* #353535 */
+    --widget-title: #d0d0d0;
+    --widget-item-hover: rgba(255, 255, 255, 0.1); /* rgba(255, 255, 255, 0.1); */
+    --item-hover: rgba(242, 242, 242, 0.07); 
+
+    /* Animation */
+    
+    --animation-top: #313131; /* #313131 */
+    --animation-bottom: #000000; /* #000000 */
+
+    /* Tables */
+    --table-tr: #3a3a3a;
+    --table-tr-hover: rgba(238, 238, 238, 0.06);
+
+
+    /* Chests */
+
+    --silver-background: #a2a5b9; /* #a2a5b9 */
+    --golden-background: #ffb822; /* #ffb822 */
+
+    /* Diamond Store */
+    --diamondstore-bg-title: #fff;
+    --diamondstore-bg: #384c8e;
+    --diamondstore-price: #5867dd;
+    --diamondstore-subtitle: #dfe221;
+    --diamondstore-desc: #5db539;
+    --diamondstore-hexagon-outer: #1d1d1d;
+    --diamondstore-hexagon-inner: #505050;
+
+
+    /* Online Players */
+    --onlineplayers-username: var(--title-sub);
+    --onlineplayers-lastOnline: #a2a2a2;
+    --onlineplayers-title: var(--title-sub);
+
+
+    /* Character page */
+    --char-title: var(--title-sub);
+
+    /* Quests page */
+
+    --quests-title: var(--title-sub);
+    
+
+    /* BA page */
+    --ba-title: var(--title-sub);
+    --ba-widget-title: var(--title);
+
+    /* Inbox page */
+    --inbox-username: var(--player);
+
+
+    /* Chat */
+    --chat-username: var(--player);
+    --chat-bg: #1d1d1d;
+    --chat-textarea: rgba(95, 95, 95, 0.45);
+
+    /* Footer */
+    --footer-link: var(--link); /*#39af47*/
+    --footer-link-hover: var(--link-hover); /*#30ff49*/
+    --footer-copyright: var(--footer-link);
+    --footer-copyright-hover: var(--footer-link-hover);
+    --footer-text: var(--text);
+
+
+    /* Rarities - for future */
+    --common: #34495e;
+    --uncommon: #2980b9;
+    --rare: #e67e22;
+    --epic: #8e44ad;
+    --elite: #c0392b;
+    --legendary: #f1c40f;
+    --celestialA: #00f6ff;
+    --celestialB: #02878c;  /* -webkit-linear-gradient(0deg, #00f6ff,#02878c) */
 }
 
 body{
@@ -35,7 +137,7 @@ body:after {
 /* ----------- TOP MENU NAVIGATION ----------- */
 
 .navbar{
-background-color: rgba(0, 0, 0, 0.30) !important;
+background-color: var(--navbar) !important;
 }
 
 .dropdown-menu{
@@ -47,7 +149,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .dropdown-item:focus, .dropdown-item:hover{
-	background-color: var(--item-hover);
+	background-color: var(--widget-item-hover);
 }
 
 .dropdown-menu .kt-notification{
@@ -59,7 +161,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .dropdown-menu .kt-notification .kt-notification__item:hover{
-	background-color: var(--item-hover);
+	background-color: var(--widget-item-hover);
 }
 
 /* ----------- DEFAULT KT SETTINGS ----------- */
@@ -68,49 +170,43 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     color: var(--text) !important;
 }
 
+.kt-footer .kt-footer__menu a{
+    color: var(--footer-link) !important;
+}
+
+.kt-footer .kt-footer__menu a:hover{
+    color: var(--footer-link-hover) !important;
+}
+
 .kt-portlet{/*Dashboard - Text Color and Background-color*/
     background-color: var(--widget) !important;
     color: var(--text) !important;
 }
 
-.kt-bg-warning{/* OVERRIDE FIXES - GOLD CHEST */
-	background-color: #ffb822!important;
-}
-
 .kt-infobox .kt-infobox__title{/* Dashboard - title of updates */
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 .kt-infobox .kt-infobox__subtitle{/* Dashboard - subtitle of updates */
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 .kt-infobox .kt-infobox__body .kt-infobox__section .kt-infobox__content{/* Dashboard - content of updates */
 	color: var(--text) !important;
 }
 
-.kt-label-bg-color-1 {/* OVERRIDE FIXES - SILVER CHEST */
-    background-color: #a2a5b9!important;
-}
 
 .kt-widget24__title, .kt-widget24__desc, .kt-widget24__change{/*Dashboard - Widget text*/
-	color: var(--text) !important;
+	color: var(--widget-title) !important;
 }
 
-.kt-widget24 a, .kt-widget24 a span{/*Dashboard - Widget Links color (guild/job)*/
-	color: var(--link) !important;
-}
-
-.kt-widget24 a:hover, .kt-widget24 a span:hover{/*Dashboard - Widget Links color on hover (guild/job)*/
-	color: var(--link-hover) !important;
-}
 
 .kt-widget24 span, .kt-widget24 div{/*Dashboard - Widget*/ 
-    color:var(--text) !important;
+    color:var(--text);
 }
 
 .kt-widget.kt-widget--user-profile-2 .kt-widget__body .kt-widget__content .kt-widget__stats .kt-widget__details .kt-widget__title{/*Dashboard - Widget title (gold, diamonds, steps, etc.)*/
-	color: var(--link) !important;
+	color: var(--widget-title) !important;
 }
 
 .kt-widget.kt-widget--user-profile-2 .kt-widget__body .kt-widget__content .kt-widget__stats .kt-widget__details .kt-widget__value{/*Dashboard - Widget variables (gold, diamonds, steps, etc.)*/
@@ -118,15 +214,19 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .kt-iconbox--animate:after{/*Dashboard - Animation - upper part*/
-	background-color: #313131 !important;
+	background-color: var(--animation-top) !important;
 }
 
 .kt-iconbox--animate:before{/*Dashboard - Animation - bottom part*/
-	background-color: #000000 !important;
+	background-color: var(--animation-bottom) !important;
+}
+
+.kt-font-success i{/*Dashboard - Animation - player icon*/
+    color: var(--icon) !important;
 }
 
 .kt-iconbox__title a{/*Dashboard - Animation - title color*/
-    color: var(--widget-title) !important;
+    color: var(--title) !important;
 }
 
 .kt-iconbox__content{/*Dashboard - Animation - sub title color*/
@@ -135,7 +235,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-grid-nav__item:hover{/*Dashboard - Items - hover color*/
-    background-color: rgba(242, 242, 242, 0.07) !important;
+    background-color: var(--item-hover) !important;
 }
 
 .kt-grid-nav__title, .kt-grid-nav__desc{/*Dashboard - Items - text color*/
@@ -143,7 +243,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .kt-portlet__head-title{/*Dashboard - Widget - Title - text color*/
-    color: var(--widget-title) !important;
+    color: var(--title) !important;
 }
 
 .col-xs-12 .selectableRow .col-xs-12{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
@@ -170,7 +270,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .selectableRow:hover{/*Dashboard - Lists - Rows - hover effect (Tasks, Inventory, etc.)*/
-    background-color: rgba(242, 242, 242, 0.07) !important;
+    background-color: var(--item-hover) !important;
 }
 
 .container .selectableRow{
@@ -188,11 +288,11 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-portlet.kt-portlet--head-overlay.kt-portlet--head-lg .kt-portlet__body .kt-widget27 .kt-widget27__visual{
-	background: #384c8e !important;
+	background: var(--diamondstore-bg) !important;
 }
 
 .kt-subheader__title{
-	color: var(--widget-title) !important;
+	color: var(--title) !important;
 }
 
 
@@ -207,16 +307,21 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 
-.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__info .kt-widget31__username {/* GANE STATS */
-    color: #5771de;
+.kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__info .kt-widget31__username {/* Character - titles / Profile - titles (above/next str, def, dex, etc.) */
+    color: var(--char-title);
 }
 
 .kt-widget--user-profile-3 .kt-widget__username{/* ONLINE PLAYERS - USERNAME */
-	color: #5771de !important;
+	color: var(--onlineplayers-username) !important;
 }
 
-.kt-widget--user-profile-3 .kt-widget__title{ /* ONLINE PLAYERS - TITLE */
-	color: #5771de !important;
+.kt-widget.kt-widget--user-profile-3 .kt-widget__top .kt-widget__content .kt-widget__subhead a{/* ONLINE PLAYERS - last online */
+    color: var(--onlineplayers-lastOnline) !important;
+}
+
+
+.kt-widget--user-profile-3 .kt-widget__title{ /* ONLINE PLAYERS - TITLES above stats (level, exp, etc.) */
+	color: var(--onlineplayers-title) !important;
 }
 
 .kt-widget--user-profile-3 .kt-widget__value, .kt-widget--user-profile-3 .kt-widget__desc{ /* ONLINE PLAYERS - value + desc */
@@ -231,39 +336,47 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-pricing-1 .kt-pricing-1__hexagon1:after{
-	    border-top: 7.5rem solid #1d1d1d !important;
+	    border-top: 7.5rem solid var(--diamondstore-hexagon-outer) !important;
 }
 
 .kt-pricing-1 .kt-pricing-1__hexagon1:before{
-	    border-bottom: 7.5rem solid #1d1d1d !important;
+	    border-bottom: 7.5rem solid var(--diamondstore-hexagon-outer) !important;
 }
 
 .kt-pricing-1  .kt-pricing-1__hexagon2:after{
-	    border-top: 3.71rem  solid #505050 !important;
+	    border-top: 3.71rem  solid var(--diamondstore-hexagon-inner) !important;
 }
 
 .kt-pricing-1 .kt-pricing-1__hexagon2:before{
-	    border-bottom: 3.71rem solid #505050 !important;
+	    border-bottom: 3.71rem solid var(--diamondstore-hexagon-inner) !important;
 }
 
 .kt-pricing-1 .kt-pricing-1__price{
-	color: var(--link) !important;
+	color: var(--diamondstore-price) !important; /*  CONTINUE */
 }
 
 .kt-pricing-1 .kt-pricing-1__subtitle {
-    color: #dfe221 !important;
+    color: var(--diamondstore-subtitle) !important;
+}
+
+.kt-pricing-1 .kt-pricing-1__items .kt-pricing-1__item .kt-pricing-1__description span small{
+    color: var(--diamondstore-desc) !important;
 }
 
 .kt-pricing-2 .kt-pricing-2__head{
-    background-color: #384c8e !important;
+    background-color: var(--diamondstore-bg) !important;
 }
 
 .kt-pricing-2 .kt-pricing-2__items {
 	background-color: var(--widget) !important;
 }
 
+.kt-pricing-2__title .kt-font-light{
+    color: var(--diamondstore-bg-title) !important;
+}
+
 .kt-pricing-2 .kt-pricing-2__subtitle {
-    color: #dfe221 !important;
+    color: var(--diamondstore-subtitle) !important;
 }
 
 .kt-pricing-2 .kt-pricing-2__features span{
@@ -276,11 +389,11 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-pricing-2 .kt-pricing-2__hexagon:before{
-    border-bottom: 5.71rem solid #505050 !important;
+    border-bottom: 5.71rem solid var(--diamondstore-hexagon-inner) !important;
 }
 
 .kt-pricing-2 .kt-pricing-2__hexagon:after{
-	border-top: 5.71rem solid #505050 !important;
+	border-top: 5.71rem solid var(--diamondstore-hexagon-inner) !important;
 }
 
 #weekCountDown{/* AVATAR STORE WEEK COUNT DOWN */
@@ -289,11 +402,11 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-notification-v2 .kt-notification-v2__item:hover {
-    background-color: rgba(242, 242, 242, 0.07) !important;
+    background-color: var(--item-hover) !important;
 }
 
-.kt-notification-v2 .kt-notification-v2__item-title{
-	color: var(--link) !important;
+.kt-notification-v2 .kt-notification-v2__item-title{ /* Guess it is BA titles */
+	color: var(--ba-title) !important;
 }
 
 .kt-notification-v2 .kt-notification-v2__item-desc{
@@ -302,12 +415,12 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 
 .kt-widget.kt-widget--user-profile-4 .kt-widget__head .kt-widget__content .kt-widget__section .kt-widget__username{
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 /* QUESTS */
-.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__title{
-	color: var(--link) !important;
+.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__title{ /* Quests title */
+	color: var(--quests-title) !important;
 }
 
 .kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__desc{
@@ -316,7 +429,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 	/* BATTLE ARENA */
 .kt-callout .kt-callout__body .kt-callout__content .kt-callout__title{
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 .kt-callout .kt-callout__body .kt-callout__content .kt-callout__desc{
@@ -336,8 +449,8 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	background-color: #000000 !important;
 }
 
-.kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__desc{
-	color: var(--link) !important;
+.kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__desc{ /* BATTLE ARENA - Total kills/Tier Completion */
+	color: var(--ba-widget-title) !important;
 }
 
 .kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__value{
@@ -410,12 +523,12 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 /* ----------- SIDENAV CHAT ----------- */
 
 #mySidenav{
-    background-color: #1d1d1d;
-    border-left: 1px solid rgb(0, 0, 0) !important;
+    background-color: var(--chat-bg);
+    border-left: var(--chat-bg) !important;
 }
 
 #chatText{
-	background-color: rgba(95, 95, 95, 0.45);
+	background-color: var(--chat-textarea);
     color: var(--text);
 }
 
@@ -430,7 +543,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 /* PARTLY CHAT BUT TABLES AS WELL */
 
 .mdl-data-table{
-	background-color: #3a3a3a !important;;
+	background-color: var(--table-tr) !important;;
     color: var(--text);
 }
 
@@ -439,7 +552,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .mdl-data-table tr:hover{
-    background-color: rgba(238, 238, 238, 0.06) !important;
+    background-color: var(--table-tr-hover) !important;
 }
 
 .table-striped tbody tr:nth-of-type(odd){
@@ -451,7 +564,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .table-striped th{
-	color: var(--widget-title);
+	color: var(--title);
 }
 
 
@@ -468,11 +581,11 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 /* ----------- DEFAULT BUTTONS SETTINGS ----------- */
 .cta{
 	color: var(--text) !important;
-    background-color: var(--button) !important;
+    background-color: var(--button-dark) !important;
 }
 
 .cta-success{
-    background-color: #2b6543 !important;
+    background-color: var(--button-success) !important;
     color: var(--text) !important;
 }
 
@@ -489,14 +602,14 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 */
 
 .btn-success{
-	background-color: #2b6543 !important;
+	background-color: var(--button-success) !important;
     color: var(--text) !important;
-    border-color: #2b6543 !important;
+    border-color: var(--button-success) !important;
 }
 
 .btn-success:hover, .btn-success.focus, .btn-success:focus, .btn-success:active{
-	background-color: #239051 !important;
-    border-color: #239051 !important;
+	background-color: var(--button-hover) !important;
+    border-color: var(--button-hover) !important;
 }
 
 .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
@@ -504,37 +617,38 @@ background-color: rgba(0, 0, 0, 0.30) !important;
     background: #3159bd;
     border-color: #3159bd;
 }
+
 .btn-info {
-    background-color: #384c8e;
-    border-color: #384c8e;
+    background-color: var(--button-info);
+    border-color: var(--button-info);
     color: var(--text);
 }
 
 .btn-info:hover{
-    background-color: #4a61ad;
-    border-color: #4a61ad;
+    background-color: var(--button-info-hover);
+    border-color: var(--button-info-hover);
 }
 
 .btn-danger {
-    background-color: #982d51;
-    border-color: #982d51;
+    background-color: var(--button-danger);
+    border-color: var(--button-danger);
     color: var(--text);
 }
 
 .btn-danger:hover{
-    background-color: #bf3b67;
-    border-color: #bf3b67;
+    background-color: var(--button-danger-hover);;
+    border-color: var(--button-danger-hover);;
 }
 
 .btn-warning {
-    background-color: #a77d26;
-    border-color: #a77d26;
+    background-color: var(--button-warning);
+    border-color: var(--button-warning);
     color: var(--text) !important;
 }
 
 .btn-warning:hover{
-    background-color: #c39532;
-    border-color: #c39532;
+    background-color: var(--button-warning-hover);
+    border-color: var(--button-warning-hover);
 }
 
 .btn-brand {
@@ -561,12 +675,12 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 
 .btn.disabled, .btn:disabled {
     opacity: .65;
-    background-color: #b9b9b9;
+    background-color: var(--button-disabled);
     color: black;
 }
 
 .mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab{
-    background-color: rgb(146, 46, 80);
+    background-color: var(--button-danger);
 }
 
 
@@ -584,16 +698,13 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 	color: var(--text) !important;
 }
 
-/*.swal2-content div span{
-	color: var(--widget-title) !important;
-}*/
 
 .swal2-popup .links .selectableRow{
 	color: var(--text) !important;
 }
 
 .swal2-popup .links .selectableRow:hover{
-    background-color: rgba(242, 242, 242, 0.07) !important;
+    background-color: var(--item-hover) !important;
 }
 
 .swal2-title, .swal2-title a{
@@ -654,7 +765,7 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item:hover{
- 	background-color: rgba(242, 242, 242, 0.07) !important;
+ 	background-color: var(--item-hover) !important;
 }
 
 .kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item.kt-widget__item--active{
@@ -670,13 +781,13 @@ background-color: rgba(0, 0, 0, 0.30) !important;
 }
 
 .kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__progress .kt-widget31__stats span{
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 /* INBOX */
 
-.kt-widget.kt-widget--users .kt-widget__item .kt-widget__info .kt-widget__section .kt-widget__username{
-	color: var(--link) !important;
+.kt-widget.kt-widget--users .kt-widget__item .kt-widget__info .kt-widget__section .kt-widget__username /* Inbox - Usernames on left */{
+	color: var(--inbox-username) !important;
 }
 
 .kt-widget.kt-widget--users .kt-widget__item .kt-widget__info .kt-widget__desc{
@@ -875,10 +986,13 @@ a:hover{
 	color: var(--text) !important;
 }
 
+.text-center small{
+	color: var(--text) !important;
+}
 
 /* LATEST CHANGES */
 
-/* HOVER EFFECT */
+/* HOVER link EFFECT */
 .kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item.active>.kt-nav__link .kt-nav__link-text, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link .kt-nav__link-text, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-arrow, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-icon, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link .kt-nav__link-text {
     color: #7ca2ff;
 }
@@ -894,3 +1008,51 @@ a:hover{
     background-color: var(--body);
 }
 
+
+
+/* OVERRIDES */
+
+.kt-bg-warning{/* GOLD CHEST */
+	background-color: var(--golden-background) !important;
+}
+
+.kt-label-bg-color-1 {/* SILVER CHEST */
+    background-color: var(--silver-background) !important;
+}
+
+
+.kt-font-danger, .kt-font-danger span{ /* Dashboard widget Energy */
+    color: #fd397a !important
+}
+
+.kt-font-warning, .kt-font-warning span{ /* Dashboard widget Experience */
+    color: #ffb822!important;
+}
+
+.kt-font-brand, .kt-font-brand span{ /* Dashboard widget Health */
+    color: #366cf3!important;
+}
+
+
+.kt-footer__nav-section a{
+    color: var(--footer-link) !important;
+}
+
+
+.kt-footer__nav-section a:hover{
+    color: var(--footer-link-hover) !important;
+}
+
+
+.kt-footer__copyright a{
+    color: var(--footer-copyright) !important;
+}
+
+.kt-footer__copyright a:hover{
+    color: var(--footer-copyright-hover) !important;
+}
+
+
+.kt-footer__copyright{
+    color: var(---footer-text) !important;
+}
