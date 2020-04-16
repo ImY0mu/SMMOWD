@@ -21,8 +21,8 @@
     --cta-success-hover: #239051; /* #239051 */
     --button-warning: #a77d26; /* #a77d26 */
     --button-warning-hover: #c39532; /* #c39532 */
-    --button-info: #4a61ad; /* 4a61ad */
-    --button-info-hover: #384c8e; /* #384c8e */
+    --button-info: #384c8e; /* #384c8e */
+    --button-info-hover: #4a61ad; /* #4a61ad */
     --button-danger: #982d51; /* #bf3b67 */
     --button-danger-hover: #bf3b67; /* ##bf3b67 */
     --button-primary: #222e90; /* #222e90 */
@@ -34,8 +34,8 @@
 
     /* popup */
     --popup: #353535; /* #353535 */
-    --popup-title: #5867dd; /* #5867dd */
-    --popup-footer: #5867dd; /* #5867dd */
+    --popup-title: var(--title); /* #5867dd */
+    --popup-footer: var(--text); /* #5867dd */
 
     /* alerts */
     
@@ -91,6 +91,7 @@
 
     /* Inbox page */
     --inbox-username: var(--player);
+    --inbox-textarea: #c2c4d2;
 
 
     /* Chat */
@@ -104,6 +105,9 @@
     --footer-copyright: var(--footer-link);
     --footer-copyright-hover: var(--footer-link-hover);
     --footer-text: var(--text);
+
+    /* Discussions */
+    --discussions-title: #3278d0;
 
 
     /* Rarities - for future */
@@ -591,17 +595,10 @@ background-color: var(--navbar) !important;
     color: var(--text) !important;
 }
 
-/* REMOVED as the LOADER ON CONFIRM GETS BROKEN
-.swal2-confirm{
-	background-color: #384c8e !important;
-    border-color: #384c8e !important;
+.swal2-styled.swal2-confirm{
+	background-color: var(--button-info) !important;
 }
 
-.swal2-confirm:hover{
-	background-color: #4a61ad !important;
-    border-color: #4a61ad !important;
-}
-*/
 
 .btn-success{
 	background-color: var(--button-success) !important;
@@ -621,58 +618,58 @@ background-color: var(--navbar) !important;
 }
 
 .btn-info {
-    background-color: var(--button-info);
-    border-color: var(--button-info);
+    background-color: var(--button-info) !important;
+    border-color: var(--button-info) !important;
     color: var(--text);
 }
 
-.btn-info:hover{
-    background-color: var(--button-info-hover);
-    border-color: var(--button-info-hover);
+.btn-info:hover, .btn-info.focus, .btn-info:focus, .btn-info:active{
+    background-color: var(--button-info-hover) !important;
+    border-color: var(--button-info-hover) !important;
 }
 
 .btn-danger {
-    background-color: var(--button-danger);
-    border-color: var(--button-danger);
+    background-color: var(--button-danger) !important;
+    border-color: var(--button-danger) !important;
     color: var(--text);
 }
 
-.btn-danger:hover{
-    background-color: var(--button-danger-hover);;
-    border-color: var(--button-danger-hover);;
+.btn-danger:hover, .btn-danger.focus, .btn-danger:focus, .btn-danger:active{
+    background-color: var(--button-danger-hover) !important;
+    border-color: var(--button-danger-hover) !important;
 }
 
 .btn-warning {
-    background-color: var(--button-warning);
-    border-color: var(--button-warning);
+    background-color: var(--button-warning) !important;
+    border-color: var(--button-warning) !important;
     color: var(--text) !important;
 }
 
-.btn-warning:hover{
-    background-color: var(--button-warning-hover);
-    border-color: var(--button-warning-hover);
+.btn-warning:hover, .btn-warning.focus, .btn-warning:focus, .btn-warning:active{
+    background-color: var(--button-warning-hover) !important;
+    border-color: var(--button-warning-hover) !important;
 }
 
 .btn-brand {
-    background-color: #2b4a98;
-    border-color: #2b4a98;
+    background-color: var(--button-brand) !important;
+    border-color: var(--button-brand) !important;
     color: var(--text) !important;
 }
 
-.btn-brand:hover {
-    background-color: #3659b1;
-    border-color: #3659b1;
+.btn-brand:hover, .btn-brand.focus, .btn-brand:focus, .btn-brand:active{
+    background-color: var(--button-brand-hover) !important;
+    border-color: var(--button-brand-hover) !important;
 }
 
 .btn-primary {
-    background-color: #222e90;
-    border-color: #222e90;
+    background-color: var(--button-primary) !important;
+    border-color: var(--button-primary) !important;
     color: var(--text) !important;
 }
 
-.btn-primary:hover {
-    background-color: #3543b5 !important;
-    border-color: #3543b5 !important;
+.btn-primary:hover, .btn-primary.focus, .btn-primary:focus, .btn-primary:active{
+    background-color: var(--button-primary-hover) !important;
+    border-color: var(--button-primary-hover) !important;
 }
 
 .btn.disabled, .btn:disabled {
@@ -800,6 +797,9 @@ background-color: var(--navbar) !important;
     color: #b6b9c7;
 }
 
+.kt-chat .kt-chat__input .kt-chat__editor textarea{
+    color: var(--inbox-textarea) !important;
+}
 
 #kt_chat_content h4{
 	color: var(--text);
@@ -830,8 +830,8 @@ background-color: var(--navbar) !important;
 
 /* ----------- DISCUSSION BOARDS ----------- */
 
-.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__stats .kt-widget5__number{/* number above posts  */
-	color: var(--link) !important;
+.kt-widget5 .kt-widget5__item .kt-widget5__content .kt-widget5__stats .kt-widget5__number{/* title and number above posts  */
+	color: var(--discussions-title) !important;
 }
 
 /* ----------- PLAYER PROFILE ----------- */
@@ -968,7 +968,7 @@ a:hover{
 }
 
 .container div h2{
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 .container div{
@@ -976,13 +976,14 @@ a:hover{
 }
 
 .col-md-8 div .a-no-style h4{
-	color: var(--text) !important;
+	color: var(--title) !important;
 }
 
-
+/*
 .col-md-8 span{
 	color: var(--text) !important;
 }
+*/
 
 .text-center span{
 	color: var(--text) !important;
@@ -1035,7 +1036,11 @@ a:hover{
     color: #366cf3!important;
 }
 
+.bg-success {
+    background-color: #26736b!important;
+}
 
+/* Footer stuff */
 .kt-footer__nav-section a{
     color: var(--footer-link) !important;
 }
