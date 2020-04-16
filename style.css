@@ -853,6 +853,21 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important;
 }
 
+/* Jobs */
+
+.kt-widget27 .kt-widget27__visual .kt-widget27__title{
+    color: var(--title) !important;
+}
+
+.btn.btn-light.btn-elevate {
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+}
+.btn.btn-light.btn-elevate.active, .btn.btn-light.btn-elevate:active, .btn.btn-light.btn-elevate:focus, .btn.btn-light.btn-elevate:hover, .show>.btn.btn-light.btn-elevate{
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
+}
+
+
+
 /* PLAYER PROFILE - INVENTORY */
 
 #equipmentViewer table{
@@ -925,6 +940,10 @@ background-color: var(--navbar) !important;
 
 .not-active:hover {
     background-color: #292929 !important;
+}
+
+.fa-spinner{
+	color: var(--text) !important
 }
 
 /* ALERTS */
