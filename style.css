@@ -953,6 +953,10 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important
 }
 
+.progressbar-text{
+	color: var(--text) !important
+}
+
 /* ALERTS */
 .alert.alert-success{
 	background: #2c867c;
