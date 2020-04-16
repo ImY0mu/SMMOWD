@@ -608,8 +608,8 @@ background-color: var(--navbar) !important;
 }
 
 .btn-success:hover, .btn-success.focus, .btn-success:focus, .btn-success:active{
-	background-color: var(--button-hover) !important;
-    border-color: var(--button-hover) !important;
+	background-color: var(--button-success-hover) !important;
+    border-color: var(--button-success-hover) !important;
 }
 
 .btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
