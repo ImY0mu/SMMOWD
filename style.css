@@ -1056,3 +1056,7 @@ a:hover{
 .kt-footer__copyright{
     color: var(---footer-text) !important;
 }
+
+.tooltip:after, [data-tooltip]:after{
+    background-color: rgba(128, 128, 128, 0.9) !important;
+}
