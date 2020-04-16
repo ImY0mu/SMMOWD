@@ -15,8 +15,10 @@
     
     /* buttons */
     --button-dark: rgb(37, 37, 37); /* rgb(37, 37, 37) */
-    --button-success: #2b6543; /* 2b6543 */
-    --button-success-hover: #239051; /* #239051 */
+    --button-success: #2b6555; /* 2b6555 */     
+    --button-success-hover: #357b68; /* #357b68 */
+    --cta-success: #2b6543; /* 2b6543 */
+    --cta-success-hover: #239051; /* #239051 */
     --button-warning: #a77d26; /* #a77d26 */
     --button-warning-hover: #c39532; /* #c39532 */
     --button-info: #4a61ad; /* 4a61ad */
@@ -585,7 +587,7 @@ background-color: var(--navbar) !important;
 }
 
 .cta-success{
-    background-color: var(--button-success) !important;
+    background-color: var(--cta-success) !important;
     color: var(--text) !important;
 }
 
@@ -839,7 +841,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__title{
-	color: var(--title) !important;
+	color: var(--link) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__desc{
