@@ -272,7 +272,7 @@ background-color: var(--navbar) !important;
 
 
 .selectableRow span:nth-child(4), .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
-    color: var(--text) !important;
+    color: var(--text) !important; /* BUGGS out leaderboards custom names */
 }
 
 .selectableRow:hover{/*Dashboard - Lists - Rows - hover effect (Tasks, Inventory, etc.)*/
@@ -611,8 +611,11 @@ background-color: var(--navbar) !important;
     border-color: var(--button-success-hover) !important;
 }
 
-.btn.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
+.btn-default{
     color:var(--text) !important;
+}
+
+.btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
     background: #3159bd;
     border-color: #3159bd;
 }
@@ -837,11 +840,11 @@ background-color: var(--navbar) !important;
 /* ----------- PLAYER PROFILE ----------- */
 
 .kt-grid__item .mb-2 .col-xs-12 .mdl-data-table td span{
-	color: yellow !important;
+	color: var(--text-sub) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__title{
-	color: var(--link) !important;
+	color: var(--widget-title) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__desc{
@@ -866,7 +869,11 @@ background-color: var(--navbar) !important;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
 }
 
+/* Awards */
 
+#awardViewer .page-content table td span{
+    color: var(--text-sub) !important;
+}
 
 /* PLAYER PROFILE - INVENTORY */
 
@@ -986,6 +993,15 @@ a:hover{
     color: var(--text) !important;
 }
 
+.content p a{
+    color: yellow !important;
+}
+
+.content p a:hover{
+    color: rgb(23, 147, 230) !important;
+}
+
+
 .container div h2{
 	color: var(--title) !important;
 }
@@ -1002,10 +1018,14 @@ a:hover{
 .col-md-8 span{
 	color: var(--text) !important;
 }
-*/
+
 
 .text-center span{
 	color: var(--text) !important;
+}*/
+
+.text-center form span {
+    color: white !important;
 }
 
 .text-center small{
