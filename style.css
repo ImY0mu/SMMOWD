@@ -7,9 +7,9 @@
     --link: #5867dd; /* #5867dd */
     --link-hover: #a7b1ff; /* #a7b1ff */
     --player: #6d79d6;
-    --title: #5867dd; /* #5867dd  #8ad055*/
+    --title: #d0d0d0; /* #5867dd  #8ad055*/
     --title-sub: #d0d0d0;
-    --icon: var(--title);
+    --icon: #44d6f7;
     
     
     
@@ -839,7 +839,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__title{
-	color: var(--link) !important;
+	color: var(--title) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__desc{
