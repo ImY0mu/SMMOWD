@@ -812,6 +812,10 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important;
 }
 
+#kt_user_profile_aside .text-center span{
+	color: var(--text) !important;
+}
+
 /*INBOX - Speech buble*/
 .speech-bubble-them{
     color: rgb(255, 255, 255) !important;
