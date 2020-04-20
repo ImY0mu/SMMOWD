@@ -301,6 +301,10 @@ background-color: var(--navbar) !important;
 	color: var(--title) !important;
 }
 
+.kt-widget4 .kt-widget4__item .kt-widget4__title{
+	color: var(--title);
+}
+
 
 /*Dashboard - Speech buble*/
 .kt-portlet .speech-bubble{
