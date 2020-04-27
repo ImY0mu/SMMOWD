@@ -695,7 +695,7 @@ background-color: var(--navbar) !important;
     color: var(--text) !important;
 }
 
-.btn-brand:hover, .btn-brand.focus, .btn-brand:focus, .btn-brand:active{
+.btn-brand:hover, .btn-label-brand:hover, .btn-brand.focus, .btn-label-brand.focus, .btn-brand:focus, .btn-label-brand:focus, .btn-label-brand:active, .btn-brand:active{
     background-color: var(--button-brand-hover) !important;
     border-color: var(--button-brand-hover) !important;
 }
@@ -1034,6 +1034,11 @@ background-color: var(--navbar) !important;
     background: var(--chat-textarea) !important;
     color: var(--text) !important;
 }
+
+.input-group-text{
+    background-color: var(--body) !important;
+    color: var(--text) !important;
+}
   
 /* GAME RULES */
 
@@ -1061,6 +1066,10 @@ background-color: var(--navbar) !important;
 
 .mdl-layout__tab {
     color: var(--text-sub) !important;
+}
+
+.discussion_posts_profile_individual{
+    color: var(--text) !important;
 }
 
 
@@ -1274,4 +1283,19 @@ a:hover{
 /* MEDIA */
 .kt-app .kt-app__aside {
     background-color: var(--body) !important;
+}
+
+
+/* Brightness fixes */
+
+.kt-pricing-2 .kt-pricing-2__head{
+    filter: brightness(0.8);
+}
+
+.kt-user-card{
+    filter: brightness(0.8);
+}
+
+.travel{
+    filter: brightness(0.9);
 }
