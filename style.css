@@ -589,9 +589,10 @@ background-color: var(--navbar) !important;
     color: var(--text);
 }
 
+/* REMOVED 27. 4.
 .mdl-data-table td span{
     color: var(--text) !important;
-}
+}*/
 
 .mdl-data-table tr:hover{
     background-color: var(--table-tr-hover) !important;
@@ -654,6 +655,13 @@ background-color: var(--navbar) !important;
 .btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
     background: #3159bd;
     border-color: #3159bd;
+}
+
+
+.mdl-button--raised.mdl-button--colored{
+    background-color: var(--button-info) !important;
+    border-color: var(--button-info) !important;
+    color: var(--text);
 }
 
 .btn-info {
@@ -1299,3 +1307,15 @@ a:hover{
 .travel{
     filter: brightness(0.9);
 }
+
+
+/* LATEST CHANGES - PROFILE MARKET ITEMS */
+
+.kt-app__content .fullPanelTwo span:nth-child(1) {
+    color: var(--text) !important;
+}
+.kt-app__content .fullPanelTwo span:nth-child(3) {
+    color: var(--text) !important;
+}
+
+
