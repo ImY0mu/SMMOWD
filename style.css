@@ -219,6 +219,9 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important;
 }
 
+.kt-iconbox--success.kt-iconbox--animate, .kt-iconbox--success.kt-iconbox--animate-fast, .kt-iconbox--success.kt-iconbox--animate-faster, .kt-iconbox--success.kt-iconbox--animate-slow, .kt-iconbox--success.kt-iconbox--animate-slower{
+    background-color: var(--body) !important;
+}
 .kt-iconbox--animate:after{/*Dashboard - Animation - upper part*/
 	background-color: var(--animation-top) !important;
 }
@@ -239,6 +242,14 @@ background-color: var(--navbar) !important;
     color:var(--text) !important;
 }
 
+
+.kt-iconbox--animate-slow:after{
+    background-color: var(--animation-top) !important;
+}
+
+.kt-iconbox--animate-fast:after{
+    background-color: var(--animation-top) !important;
+}
 
 .kt-grid-nav__item:hover{/*Dashboard - Items - hover color*/
     background-color: var(--item-hover) !important;
@@ -951,6 +962,36 @@ background-color: var(--navbar) !important;
 	    border: 2px solid var(--text);
 }
 
+
+/* GAME RULES */
+
+.mdl-card{
+    background-color: var(--widget);
+}
+
+.mdl-card .mdl-card__title .mdl-card__title-text{
+    color: var(--text) !important;
+}
+
+.mdl-card .mdl-card__supporting-text{
+    color: var(--text)!important;
+}
+
+/* DISCUSSION POSTS AT PROFILE */
+
+.mdl-layout__tab-bar{
+	background-color: var(--widget) !important;
+}
+
+.mdl-layout__tab.is-active {
+    color: var(--text) !important;
+}
+
+.mdl-layout__tab {
+    color: var(--text-sub) !important;
+}
+
+
 /* OTHER */
 
 .not-active:hover {
@@ -963,6 +1004,10 @@ background-color: var(--navbar) !important;
 
 .progressbar-text{
 	color: var(--text) !important
+}
+
+.octicon-link{
+    fill: var(--text) !important;
 }
 
 /* ALERTS */
@@ -978,6 +1023,32 @@ background-color: var(--navbar) !important;
 
 .label-info {
     background-color: #008ebd;
+}
+
+/* SUPPORT PAGER */
+
+.kt-sc{
+    background-color: var(--widget) !important;
+}
+
+.kt-sc__heading{
+    color: var(--text) !important;
+}
+
+.kt-iconbox .kt-iconbox__body .kt-iconbox__desc .kt-iconbox__title{
+    color: var(--widget-title) !important;
+}
+
+.kt-iconbox--animate-fast{
+    background-color: var(--body) !important;
+}
+
+.kt-iconbox--animate-slow{
+    background-color: var(--body) !important;
+}
+
+.kt-iconbox--animate{
+    background-color: var(--body) !important;
 }
 
 /* BASIC LINKS */
