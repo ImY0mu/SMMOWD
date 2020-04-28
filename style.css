@@ -1,41 +1,41 @@
 :root {
     /* Default colors */
-    --navbar: rgba(0, 0, 0, 0.30);  /* rgba(0, 0, 0, 0.30); */
-    --body: #232323; /* #232323 */
-    --text: #d0d0d0; /* #d0d0d0 */
-    --text-sub: #969696; /* #969696 */
-    --link: #5867dd; /* #5867dd */
-    --link-hover: #a7b1ff; /* #a7b1ff */
+    --navbar: rgba(0, 0, 0, 0.30);  
+    --body: #232323;
+    --text: #d0d0d0;
+    --text-sub: #969696; 
+    --link: #5867dd;
+    --link-hover: #a7b1ff;
     --player: #6d79d6;
-    --title: #d0d0d0; /* #5867dd  #8ad055*/
+    --title: #d0d0d0;
     --title-sub: #d0d0d0;
-    --icon: #44d6f7;
+    --icon: #366cf3;
     
     
     
     /* buttons */
-    --button-dark: rgb(37, 37, 37); /* rgb(37, 37, 37) */
-    --button-success: #2b6555; /* 2b6555 */     
-    --button-success-hover: #357b68; /* #357b68 */
-    --cta-success: #2b6543; /* 2b6543 */
-    --cta-success-hover: #239051; /* #239051 */
-    --button-warning: #a77d26; /* #a77d26 */
-    --button-warning-hover: #c39532; /* #c39532 */
-    --button-info: #384c8e; /* #384c8e */
-    --button-info-hover: #4a61ad; /* #4a61ad */
-    --button-danger: #982d51; /* #bf3b67 */
-    --button-danger-hover: #bf3b67; /* ##bf3b67 */
-    --button-primary: #222e90; /* #222e90 */
-    --button-primary-hover: #3543b5; /* #3543b5 */
-    --button-brand: #2b4a98; /* 2b4a98 */
-    --button-brand-hover: #3659b1; /* #3659b1 */
+    --button-dark: rgb(37, 37, 37); 
+    --button-success: #2b6555;  
+    --button-success-hover: #357b68;
+    --cta-success: #2b6543; 
+    --cta-success-hover: #239051; 
+    --button-warning: #a77d26; 
+    --button-warning-hover: #c39532;
+    --button-info: #384c8e; 
+    --button-info-hover: #4a61ad; 
+    --button-danger: #982d51;
+    --button-danger-hover: #bf3b67; 
+    --button-primary: #222e90; 
+    --button-primary-hover: #3543b5; 
+    --button-brand: #2b4a98; 
+    --button-brand-hover: #3659b1; 
 
-    --button-disabled: #b9b9b9; /* #b9b9b9 */
-
+    --button-disabled: #b9b9b9; 
+    
     /* popup */
-    --popup: #353535; /* #353535 */
-    --popup-title: var(--title); /* #5867dd */
-    --popup-footer: var(--text); /* #5867dd */
+    --popup: #353535; 
+    --popup-title: var(--title); 
+    --popup-footer: var(--text); 
 
     /* alerts */
 
@@ -52,15 +52,15 @@
     --toast-danger: #652b2b;
     
     /* Widgets */
-    --widget: #353535; /* #353535 */
+    --widget: #353535; 
     --widget-title: #d0d0d0;
-    --widget-item-hover: rgba(255, 255, 255, 0.1); /* rgba(255, 255, 255, 0.1); */
+    --widget-item-hover: rgba(255, 255, 255, 0.1); 
     --item-hover: rgba(242, 242, 242, 0.07); 
 
     /* Animation */
     
-    --animation-top: #313131; /* #313131 */
-    --animation-bottom: #000000; /* #000000 */
+    --animation-top: #313131;
+    --animation-bottom: var(--body);
 
     /* Tables */
     --table-tr: #3a3a3a;
@@ -69,8 +69,8 @@
 
     /* Chests */
 
-    --silver-background: #a2a5b9; /* #a2a5b9 */
-    --golden-background: #ffb822; /* #ffb822 */
+    --silver-background: #a2a5b9;
+    --golden-background: #ffb822;
 
     /* Diamond Store */
     --diamondstore-bg-title: #fff;
@@ -108,11 +108,11 @@
     /* Chat */
     --chat-username: var(--player);
     --chat-bg: #1d1d1d;
-    --chat-textarea: rgb(74, 74, 74); /*rgba(95, 95, 95, 0.45)*/
+    --chat-textarea: rgb(74, 74, 74); 
 
     /* Footer */
-    --footer-link: var(--link); /*#39af47*/
-    --footer-link-hover: var(--link-hover); /*#30ff49*/
+    --footer-link: var(--link); 
+    --footer-link-hover: var(--link-hover);
     --footer-copyright: var(--footer-link);
     --footer-copyright-hover: var(--footer-link-hover);
     --footer-text: var(--text);
@@ -231,7 +231,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-iconbox--success.kt-iconbox--animate, .kt-iconbox--success.kt-iconbox--animate-fast, .kt-iconbox--success.kt-iconbox--animate-faster, .kt-iconbox--success.kt-iconbox--animate-slow, .kt-iconbox--success.kt-iconbox--animate-slower{
-    background-color: var(--body) !important;
+    background-color: var(--animation-bottom) !important;
 }
 .kt-iconbox--animate:after{/*Dashboard - Animation - upper part*/
 	background-color: var(--animation-top) !important;
@@ -242,7 +242,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-iconbox--brand.kt-iconbox--animate, .kt-iconbox--brand.kt-iconbox--animate-fast, .kt-iconbox--brand.kt-iconbox--animate-faster, .kt-iconbox--brand.kt-iconbox--animate-slow, .kt-iconbox--brand.kt-iconbox--animate-slower{
-    background-color: var(--body) !important;
+    background-color: var(--animation-bottom) !important;
 }
 
 .kt-font-success i{/*Dashboard - Animation - player icon*/
@@ -497,11 +497,11 @@ background-color: var(--navbar) !important;
 }
 
 .kt-iconbox--animate-slower:after{/*BATTLE ARENA - Animation - upper part*/
-	background-color: #313131 !important;
+	background-color: var(--animation-top) !important;
 }
 
 .kt-iconbox--animate-slower:before{/*BATTLE ARENA - Animation - bottom part*/
-	background-color: #000000 !important;
+	background-color: var(--animation-bottom);
 }
 
 .kt-widget12 .kt-widget12__content .kt-widget12__item .kt-widget12__info .kt-widget12__desc{ /* BATTLE ARENA - Total kills/Tier Completion */
@@ -1156,15 +1156,15 @@ background-color: var(--navbar) !important;
 }
 
 .kt-iconbox--animate-fast{
-    background-color: var(--body) !important;
+    background-color: var(--animation-bottom) !important;
 }
 
 .kt-iconbox--animate-slow{
-    background-color: var(--body) !important;
+    background-color: var(--animation-bottom) !important;
 }
 
 .kt-iconbox--animate{
-    background-color: var(--body) !important;
+    background-color: var(--animation-bottom) !important;
 }
 
 /* BASIC LINKS */
