@@ -300,11 +300,16 @@ background-color: var(--navbar) !important;
 
 /* NEEDS TO BE FIXED */
 #inentory_items_body .selectableRow span:nth-child(4), #inentory_items_body .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
-    color: var(--text) !important; /* BUGGS out leaderboards custom names */
+    color: var(--text) !important; 
 }
 
+#inentory_items_body .col-xs-12 span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
+    color: var(--text-sub) !important;
+}
+
+
 #inventory_equipped_body .selectableRow span:nth-child(4), #inventory_equipped_body .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
-    color: var(--text) !important; /* BUGGS out leaderboards custom names */
+    color: var(--text) !important; 
 }
 
 .selectableRow:active{
