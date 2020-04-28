@@ -284,7 +284,7 @@ background-color: var(--navbar) !important;
 
 /* PLAYER MARKET */
 
-#market-listings-body .fullPanelTwo .selectableRow .col-xs-12 .col-xs-8 span:nth-child(3){/*Player Market - Rows - text color*/
+#market-listings-body .fullPanelTwo .selectableRow .col-xs-12 .col-xs-8 span:nth-child(3), #market-listings-body .fullPanelTwo .selectableRow .col-xs-12 .col-xs-8 span:nth-child(4){/*Player Market - Rows - text color*/
     color: var(--text) !important;
 }
 
@@ -298,9 +298,17 @@ background-color: var(--navbar) !important;
 
 
 
-
-.selectableRow span:nth-child(4), .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
+/* NEEDS TO BE FIXED */
+#inentory_items_body .selectableRow span:nth-child(4), #inentory_items_body .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
     color: var(--text) !important; /* BUGGS out leaderboards custom names */
+}
+
+#inventory_equipped_body .selectableRow span:nth-child(4), #inventory_equipped_body .kt-portlet__body .selectableRow span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
+    color: var(--text) !important; /* BUGGS out leaderboards custom names */
+}
+
+.selectableRow:active{
+	background-color: var(--body) !important;
 }
 
 .selectableRow:hover{/*Dashboard - Lists - Rows - hover effect (Tasks, Inventory, etc.)*/
@@ -1070,6 +1078,7 @@ background-color: var(--navbar) !important;
 
 .mdl-layout__tab.is-active {
     color: var(--text) !important;
+    border-bottom: 3px solid var(--text) !important;
 }
 
 .mdl-layout__tab {
@@ -1318,4 +1327,12 @@ a:hover{
     color: var(--text) !important;
 }
 
+
+.label{
+	color: #fff !important;
+}
+ /* God profile moto */
+#kt_user_profile_aside .fullPanelTwo{
+	background-color: var(--body) !important;
+}
 
