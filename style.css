@@ -460,6 +460,10 @@ background-color: var(--navbar) !important;
 	color: var(--ba-title) !important;
 }
 
+.kt-notification-v2 .kt-notification-v2__item-title a{
+    color: var(--player) !important;
+}
+
 .kt-notification-v2 .kt-notification-v2__item-desc{
 	color: var(--text) !important;
 }
@@ -581,6 +585,10 @@ background-color: var(--navbar) !important;
 #chatText{
 	background-color: var(--chat-textarea);
     color: var(--text);
+}
+
+#chatArea a{
+	color: var(--player);
 }
 
 #chatContainer .highlighted-chat{
@@ -798,12 +806,9 @@ background-color: var(--navbar) !important;
 
 
 
-.faded{
-	color: rgba(255, 255, 255, 0.44);
-}
-
 .faded {
-    background: rgba(243, 243, 243, 0.08) !important;
+    background: rgba(243, 243, 243, 0.04) !important;
+    color: rgba(255, 255, 255, 0.44);
 }
 
 
