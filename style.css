@@ -1328,7 +1328,7 @@ a:hover{
 }
 
 
-/* LATEST CHANGES - PROFILE MARKET ITEMS */
+/* PROFILE MARKET ITEMS */
 
 .kt-app__content .fullPanelTwo span:nth-child(1) {
     color: var(--text) !important;
@@ -1346,3 +1346,13 @@ a:hover{
 	background-color: var(--body) !important;
 }
 
+
+/*  Latest fixes after Mike's hard work */
+
+.attack_log_individual, .trade_log_individual_time{
+	color: var(--text-sub);
+}
+
+.npc_shop_name{
+	color: var(--text);
+}
