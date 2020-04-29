@@ -1348,14 +1348,19 @@ a:hover{
 /*  */
 
 .attack_log_individual, .trade_log_individual_time{
-	color: var(--text-sub);
+	color: var(--text-sub) !important
 }
 
 .npc_shop_name{
-	color: var(--text);
+	color: var(--text) !important
 }
 
 
 .trade_log_individual_time{
 	color: var(--text-sub) !important;
+}
+
+/* KNOB */
+.kt-switch input:empty~span:before {
+    background-color: var(--body) !important
 }
