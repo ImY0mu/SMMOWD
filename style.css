@@ -133,6 +133,10 @@
 }
 
 body{
+    background: #fff url("/img/background-4-dm.png");
+    background-position: center top;
+    background-size: 1920px 350px;
+    background-repeat: no-repeat;
     background-color: var(--body) !important;
 }
 
@@ -148,6 +152,8 @@ body:after {
     background-color: rgba(0, 0, 0, 0.48);
     height: 350px;
 }
+
+
 
 
 
@@ -754,7 +760,7 @@ background-color: var(--navbar) !important;
 
 /* ----------- DEFAULT SWAL SETTINGS ----------- */
 .swal2-popup{
-	background-color: var(--popup);
+	background-color: var(--popup) !important;
 }
 
 .swal2-content{
@@ -779,15 +785,15 @@ background-color: var(--navbar) !important;
 }
 
 .swal2-footer a{
-	color: var(--popup-link);
+	color: var(--popup-link) !important;
 }
 
 .swal2-footer {
-	color: var(--popup-footer);
+	color: var(--popup-footer) !important;
 }
 
 .swal2-footer a:hover{
-	color: var(--popup-link-hover);
+	color: var(--popup-link-hover) !important;
 }
 
 .swal2-validation-message{
@@ -1328,7 +1334,7 @@ a:hover{
 }
 
 
-/* PROFILE MARKET ITEMS */
+/* LATEST CHANGES - PROFILE MARKET ITEMS */
 
 .kt-app__content .fullPanelTwo span:nth-child(1) {
     color: var(--text) !important;
@@ -1347,7 +1353,7 @@ a:hover{
 }
 
 
-/*  Latest fixes after Mike's hard work */
+/*  */
 
 .attack_log_individual, .trade_log_individual_time{
 	color: var(--text-sub);
