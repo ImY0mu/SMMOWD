@@ -1362,3 +1362,8 @@ a:hover{
 .npc_shop_name{
 	color: var(--text);
 }
+
+
+.trade_log_individual_time{
+	color: var(--text-sub) !important;
+}
