@@ -133,10 +133,6 @@
 }
 
 body{
-    background: #fff url("/img/background-4-dm.png");
-    background-position: center top;
-    background-size: 1920px 350px;
-    background-repeat: no-repeat;
     background-color: var(--body) !important;
 }
 
@@ -152,8 +148,6 @@ body:after {
     background-color: rgba(0, 0, 0, 0.48);
     height: 350px;
 }
-
-
 
 
 
@@ -760,7 +754,7 @@ background-color: var(--navbar) !important;
 
 /* ----------- DEFAULT SWAL SETTINGS ----------- */
 .swal2-popup{
-	background-color: var(--popup) !important;
+	background-color: var(--popup);
 }
 
 .swal2-content{
@@ -785,15 +779,15 @@ background-color: var(--navbar) !important;
 }
 
 .swal2-footer a{
-	color: var(--popup-link) !important;
+	color: var(--popup-link);
 }
 
 .swal2-footer {
-	color: var(--popup-footer) !important;
+	color: var(--popup-footer);
 }
 
 .swal2-footer a:hover{
-	color: var(--popup-link-hover) !important;
+	color: var(--popup-link-hover);
 }
 
 .swal2-validation-message{
@@ -1182,6 +1176,13 @@ a:hover{
 	color: #5262da;
 }
 
+
+/* INPUT FIX */
+
+.container-two .container .mdl-textfield__label.active{
+	background-color: transparent !important;
+}
+
 /* FAQ */
 
 .collapsible{
@@ -1334,6 +1335,14 @@ a:hover{
 }
 
 
+/* LATEST CHANGES - PROFILE MARKET ITEMS */
+
+.kt-app__content .fullPanelTwo span:nth-child(1) {
+    color: var(--text) !important;
+}
+.kt-app__content .fullPanelTwo span:nth-child(3) {
+    color: var(--text) !important;
+}
 
 
 .label{
@@ -1348,19 +1357,33 @@ a:hover{
 /*  */
 
 .attack_log_individual, .trade_log_individual_time{
-	color: var(--text-sub) !important
+	color: var(--text-sub);
 }
 
 .npc_shop_name{
-	color: var(--text) !important
+	color: var(--text);
 }
 
 
-.trade_log_individual_time{
-	color: var(--text-sub) !important;
+
+/* 6.4 Fixes */
+
+.nav-tabs.nav-tabs-line a.nav-link, .nav-tabs.nav-tabs-line.nav.nav-tabs .nav-link{
+    color: var(--text-sub) !important;
 }
 
-/* KNOB */
-.kt-switch input:empty~span:before {
-    background-color: var(--body) !important
+
+.nav-tabs.nav-tabs-line a.nav-link, .nav-tabs.nav-tabs-line.nav.nav-tabs .nav-link{
+    color: var(--text-sub) !important;
 }
+
+
+
+
+.nav-tabs.nav-tabs-line.nav-tabs-line-danger a.nav-link.active, .nav-tabs.nav-tabs-line.nav-tabs-line-danger a.nav-link:hover, .nav-tabs.nav-tabs-line.nav-tabs-line-danger.nav.nav-tabs .nav-link.active, .nav-tabs.nav-tabs-line.nav-tabs-line-danger.nav.nav-tabs .nav-link:hover {
+    color: var(--link) !important;
+    border-bottom: 3px solid var(--link) !important;
+}
+
+
+
