@@ -539,6 +539,15 @@ background-color: var(--navbar) !important;
     color: var(--text) !important;
 }
 
+.notice strong{
+    color: var(--text) !important;
+}
+
+.notice span{
+    color: var(--text) !important;
+}
+
+
 .notice u{
 	color: var(--link) !important;
 }
@@ -1026,7 +1035,7 @@ background-color: var(--navbar) !important;
 }
 
 .mdl-textfield__input{
-    background: #3b3b3b;
+    background-color: #3b3b3b !important;
     color: var(--text) !important;
 }
 
@@ -1336,10 +1345,10 @@ a:hover{
 
 
 /* LATEST CHANGES - PROFILE MARKET ITEMS */
-
+/* - Breaks Showcase
 .kt-app__content .fullPanelTwo span:nth-child(1) {
     color: var(--text) !important;
-}
+}*/ 
 .kt-app__content .fullPanelTwo span:nth-child(3) {
     color: var(--text) !important;
 }
@@ -1386,4 +1395,47 @@ a:hover{
 }
 
 
+.kt-portlet .kt-portlet__head .kt-portlet__head-label .kt-portlet__head-title small{
+	color: var(--text-sub) !important;
+}
 
+
+/* Item description */
+.item_description {
+    background-color: var(--body) !important;
+    color: var(--text) !important;
+}
+
+/*  Fixes - 04/06/2020 */
+.mdl-card__supporting-text{ /* Fixed the Speech bubble over Chat at dashboard */
+	z-index: auto !important;
+}
+
+
+/* Fixes 6.6 14/06/2020 */ 
+
+.btn-secondary{
+	color: var(--text-sub) !important;
+}
+
+.btn-secondary.active, .btn-secondary:active, .btn-secondary:focus, .btn-secondary:hover, .show>.btn-secondary.dropdown-toggle{
+	color: var(--text) !important;
+    background-color: var(--body);
+}
+
+
+/* TEXT AREA for inbox */
+.app-input {
+    color: var(--text);
+    background-color: var(--chat-textarea);
+    border: 1px solid var(--body);
+}
+
+/* Collectibles chests */
+#chest_1{
+    color: var(--text);
+}
+
+#chest_2{
+    color: var(--text);
+}
