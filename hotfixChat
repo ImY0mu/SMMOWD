@@ -1,0 +1,82 @@
+#chattextBtn2 i { /* fixes refresh chat btn */
+    padding-right: 0rem !important;
+}
+
+.sidenav {/* keeps textarea at the top of chat, changes position */
+    height: 90vh !important;
+    max-height: initial !important;
+    overflow-y: hidden !important;
+    border-top-left-radius: 10px !important;
+}
+
+
+#chatContainer{ /* makes content of chat scrollable so the the textarea stazs at top */
+    height: calc( 100vh - 215px ) !important;
+    overflow-y: auto !important;
+    padding-bottom: 0 !important;
+}
+
+/* scrollbar change  */
+#chatContainer::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+#chatContainer::-webkit-scrollbar-track {
+  background: #232323;
+
+}
+ 
+/* Handle */
+#chatContainer::-webkit-scrollbar-thumb {
+  background: #366cf3;
+}
+
+/* Handle on hover */
+#chatContainer::-webkit-scrollbar-thumb:hover {
+  background: #497af6;
+  cursor: pointer;
+}
+
+/* scrollbar change end */
+
+#chatContainer .mdl-data-table { /* making the border around the chat content */
+    width: calc( 100% - 5px ) !important;
+    margin-left: 5px;
+}
+
+
+#show_chat_wa { /* moves chat button to left */
+    right: calc( 100vw - 250px ) !important;
+}
+
+
+#chatArea th{ /* makes the messages be more readable (and eye saving [?]) */
+	font-weight: 500 !important;
+}
+
+
+#chatArea td:last-of-type, .mdl-data-table th:last-of-type { /* makes the content of messages widther */
+    padding-right: 8px !important;
+    padding-left: 8px !important;
+}
+
+#mySidenav .row .col-xs-12:nth-child(2) {/* fixes padding at the btns */
+    padding-top: 5px !important;
+}
+
+#chatText{/* removes resizing from the textarea */
+    resize: none;
+}
+
+#chatload{/* makes the loading bar not to move with the chat */
+    position: absolute !important;
+}
+
+#chatload .bufferbar{ /* fixes bg at the loading bar */
+    z-index: 1 !important;
+}
+
+#chatload .progressbar{ /* fixes loading thingy at the loading bar */
+    z-index: 2 !important;
+}
