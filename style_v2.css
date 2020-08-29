@@ -17,16 +17,16 @@
     --button-dark: rgb(37, 37, 37); 
     --button-success: hsl(165deg 51% 20%);
     --button-success-hover: hsl(165deg 51% 15%);
-    --cta-success: #2b6543; 
-    --cta-success-hover: #239051; 
+    --cta-success: hsl(145 40% 18%) ; 
+    --cta-success-hover: hsl(145 40% 16%); 
     --button-warning: #a77d26; 
     --button-warning-hover: #c39532;
     --button-info: hsl(226deg 43% 26%);
     --button-info-hover: hsl(226deg 43% 22%);
     --button-danger: hsl(340deg 58% 28%);
     --button-danger-hover: hsl(340deg 58% 32%);
-    --button-primary: hsl(224deg 20% 22%);
-    --button-primary-hover: hsl(224deg 20% 18%);
+    --button-primary: hsl(224deg 31% 27%);
+    --button-primary-hover: hsl(224deg 31% 23%);
     --button-brand: hsl(232deg 75% 55% / 32%); 
     --button-brand-hover:hsl(232deg 75% 55% / 24%);
     --button-disabled: #b9b9b9; 
@@ -152,7 +152,7 @@
     */
     
     --speech-bubble: #2a2a2a;
-    --highlight: #1b1b1b;
+    --highlight: hsl(0deg 0% 18%);
 }
 
 
@@ -332,7 +332,7 @@ background-color: var(--navbar) !important;
 }
 
 #inentory_items_body .col-xs-12 span span{/*Dashboard - Lists - Rows - text color (Tasks, Inventory, etc.)*/
-    color: var(--text-sub) !important;
+    color: var(--text) !important;
 }
 
 
@@ -694,8 +694,16 @@ background-color: var(--navbar) !important;
     color: var(--text-button) !important;
 }
 
+.cta-success:hover {
+    background-color: var(--cta-success-hover) !important;
+}
+
 .cta::after, .cta::before{
 	background-color: var(--body);
+}
+
+.swal2-styled.swal2-cancel{
+    background-color: hsl(0deg 0% 17%);
 }
 
 
@@ -733,8 +741,8 @@ background-color: var(--navbar) !important;
 }
 
 .btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default{
-    background: #3159bd;
-    border-color: #3159bd;
+    background: var(--button-info);
+    border-color: var(--button-info);
 }
 
 
@@ -1540,7 +1548,20 @@ a:hover{
     color: var(--text) !important;
 }
 
-
+/* navbar items */
 .nav-link .small{
     color: hsl(0deg 0% 87%) !important;
+}
+
+/* dashboard experience remaining fix */
+#exp_remaining_container{
+    color: var(--text) !important;
+}
+.kt-widget24 .kt-widget24__change{
+    color: var(--text-sub) !important;
+}
+
+/* leaderboards borders */
+#leaderboards-menu .kt-grid-nav .kt-grid-nav__row .kt-grid-nav__item{
+    border-color: var(--body) !important;
 }
