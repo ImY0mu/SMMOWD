@@ -122,6 +122,17 @@
 
 
     /* Rarities - for future */
+    --common: #899aaa; /* #c1d1e0 */
+    --uncommon: #6497dc;
+    --rare: #e67e22;
+    --epic: #8e44ad;
+    --elite: #c0392b;
+    --legendary: #f1c40f;
+    --celestialA: #00f6ff;
+    --celestialB: #02878c;  /* -webkit-linear-gradient(0deg, #00f6ff,#02878c) */
+    
+    
+   /* Original colors
     --common: #34495e;
     --uncommon: #2980b9;
     --rare: #e67e22;
@@ -129,8 +140,13 @@
     --elite: #c0392b;
     --legendary: #f1c40f;
     --celestialA: #00f6ff;
-    --celestialB: #02878c;  /* -webkit-linear-gradient(0deg, #00f6ff,#02878c) */
+    --celestialB: #02878c;
+    */
+    
+    --speech-bubble: #2a2a2a;
+    --highlight: #1b1b1b;
 }
+
 
 body{
     background-color: var(--body) !important;
@@ -198,6 +214,10 @@ background-color: var(--navbar) !important;
 .kt-portlet{/*Dashboard - Text Color and Background-color*/
     background-color: var(--widget) !important;
     color: var(--text) !important;
+    -webkit-box-shadow: 0 0 13px 0 rgb(91 91 91 / 2%) !important;
+    box-shadow: 0 0 13px 0 rgb(91 91 91 / 2%) !important;
+    
+    
 }
 
 .kt-infobox .kt-infobox__title{/* Dashboard - title of updates */
@@ -322,11 +342,11 @@ background-color: var(--navbar) !important;
 
 .container .selectableRow{
     color: var(--text) !important;
-    background-color: #333333;
+    background-color: var(--widget);
 }
 
 .container .selectableRow:hover{
-    background-color: #5d5d5d !important;
+    background-color: var(--widget-row-hover) !important;
 }
 
 /*.kt-portlet__body div span{
@@ -350,11 +370,11 @@ background-color: var(--navbar) !important;
 /*Dashboard - Speech buble*/
 .kt-portlet .speech-bubble{
     color: rgb(255, 255, 255);
-    background: #4a4a4a;
+    background: var(--speech-bubble);
 }
 
 .kt-portlet .speech-bubble:after{
-    border-top-color: #4a4a4a;	
+    border-top-color: var(--speech-bubble);	
 }
 
 
@@ -468,6 +488,9 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important;
 }
 
+.kt-callout--info.kt-callout--diagonal-bg:before{
+	background-color: rgb(45 51 68) !important;
+}
 
 .kt-widget.kt-widget--user-profile-4 .kt-widget__head .kt-widget__content .kt-widget__section .kt-widget__username{
 	color: var(--title) !important;
@@ -601,17 +624,17 @@ background-color: var(--navbar) !important;
 }
 
 #chatContainer .highlighted-chat{
-	background-color: #292929;
+	background-color: var(--highlight);
 }
 
 #chatContainer .highlighted-chat:hover{
-	background-color: #292929 !important;;
+	background-color: var(--highlight) !important;;
 }
 
 /* PARTLY CHAT BUT TABLES AS WELL */
 
 .mdl-data-table{
-	background-color: var(--table-tr) !important;;
+	background-color: var(--widget) !important;;
     color: var(--text);
 }
 
@@ -629,7 +652,7 @@ background-color: var(--navbar) !important;
 }
 
 .table-striped tbody tr:nth-of-type(odd){
-	background-color: rgba(33, 33, 33, 0.88) !important;;
+	background-color: var(--body) !important;;
 }
 
 .table-striped td{
@@ -661,6 +684,11 @@ background-color: var(--navbar) !important;
     background-color: var(--cta-success) !important;
     color: var(--text) !important;
 }
+
+.cta::after, .cta::before{
+	background-color: var(--body);
+}
+
 
 .swal2-styled.swal2-confirm{
 	background-color: var(--button-info) !important;
@@ -763,7 +791,7 @@ background-color: var(--navbar) !important;
 
 /* ----------- DEFAULT SWAL SETTINGS ----------- */
 .swal2-popup{
-	background-color: var(--popup);
+	background-color: var(--popup) !important;
 }
 
 .swal2-content{
@@ -992,6 +1020,12 @@ background-color: var(--navbar) !important;
 	color: var(--text);
 }
 
+/*  */
+
+.d-block .row .col-12{
+	color: var(--text);
+}
+
 /* ----------- PREFERENECES ----------- */
 
 
@@ -1004,7 +1038,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-nav .kt-nav__item.active>.kt-nav__link, .kt-nav .kt-nav__item.kt-nav__item--active>.kt-nav__link, .kt-nav .kt-nav__item:hover:not(.kt-nav__item--disabled):not(.kt-nav__item--sub)>.kt-nav__link {
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: var(--item-hover);
 }
 
 .kt-nav.kt-nav--v3 .kt-nav__item:hover{
@@ -1438,4 +1472,12 @@ a:hover{
 
 #chest_2{
     color: var(--text);
+}
+
+
+
+/* color fix - only common for now */
+.common-item{
+	color: var(--common) !important;
+    border-bottom-color: var(--common) !important;
 }
