@@ -1,0 +1,18 @@
+/* Navbar fixes*/
+.kt-header__topbar-item.kt-header__topbar-item--user{ /* button with avatar on right */
+    margin-right: 6px !important;
+}
+
+.kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--user .kt-header__topbar-wrapper .kt-header__topbar-icon{ /* bg shows only on hover */
+    background-color: initial;
+}
+
+.kt-header__topbar .kt-header__topbar-item .kt-header__topbar-wrapper .kt-header__topbar-icon{ /* fixes height so it is not so big */
+    height: 35px !important;
+}
+
+@media (max-width: 1024px){ /* removes blue color on hover at smaller resolution */
+    .kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--user.show .kt-header__topbar-wrapper .kt-header__topbar-icon, .kt-header__topbar .kt-header__topbar-item.kt-header__topbar-item--user:hover .kt-header__topbar-wrapper .kt-header__topbar-icon {
+        background-color: rgba(255,255,255,.2) !important;
+    }
+}
