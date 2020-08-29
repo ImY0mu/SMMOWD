@@ -1,6 +1,6 @@
 :root {
     /* Default colors */
-    --navbar: hsl(0deg 0% 0% / 60%);
+    --navbar: hsl(0deg 0% 0% / 45%);
     --body: hsl(0deg 0% 5%);
     --text: hsl(0 0% 67%);
     --text-sub: hsl(0 0% 38%);
@@ -157,10 +157,16 @@
 
 
 body{
+    background: linear-gradient(hsl(0deg 0% 28% / 50%), hsl(0deg 0% 28% / 50%), hsl(0deg 0% 5% / 50%), hsl(0deg 0% 5% / 50%), hsl(0deg 0% 5% / 50%) , hsl(0deg 0% 5% / 50%), hsl(0deg 0% 5% / 50%)), url(/img/background-4-dm.png) !important;
+    background-position: center top;
+    background-size: 1920px 350px;
+    background-repeat: no-repeat !important;
     background-color: var(--body) !important;
+    color: var(--text);
 }
 
-body:after {
+/* removed as I fixed it by putting the thiny above */
+/*body:after {
     content: "";
     position: absolute;
     top: 0;
@@ -171,7 +177,7 @@ body:after {
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.48);
     height: 350px;
-}
+}*/
 
 
 
