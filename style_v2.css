@@ -23,8 +23,8 @@
     --button-warning-hover: #c39532;
     --button-info: hsl(226deg 43% 26%);
     --button-info-hover: hsl(226deg 43% 22%);
-    --button-danger: hsl(340deg 58% 28%);
-    --button-danger-hover: hsl(340deg 58% 32%);
+    --button-danger: hsl(340deg 58% 32%);
+    --button-danger-hover: hsl(340deg 58% 24%);
     --button-primary: hsl(224deg 31% 27%);
     --button-primary-hover: hsl(224deg 31% 23%);
     --button-brand: hsl(232deg 75% 55% / 32%); 
@@ -706,6 +706,12 @@ background-color: var(--navbar) !important;
     background-color: hsl(0deg 0% 17%);
 }
 
+.btn-outline-info:hover {
+    color: #fff;
+    background-color: var(--button-info-hover);
+    border-color: var(--button-info-hover);
+}
+
 
 .swal2-styled.swal2-confirm{
 	background-color: var(--button-info) !important;
@@ -977,8 +983,12 @@ background-color: var(--navbar) !important;
 
 /* ----------- PLAYER PROFILE ----------- */
 
-.kt-grid__item .mb-2 .col-xs-12 .mdl-data-table td span{
-	color: var(--text-sub) !important;
+.kt-grid__item.kt-app__content .mb-2 .col-xs-12 .mdl-data-table td span{
+	color: hsl(223deg 43% 69%) !important;
+}
+
+.kt-grid__item .mb-2 .col-xs-12 .mdl-data-table td strong{
+    color: var(--title) !important;
 }
 
 .kt-widget.kt-widget--project-1 .kt-widget__head .kt-widget__label .kt-widget__info .kt-widget__title{
@@ -1026,8 +1036,14 @@ background-color: var(--navbar) !important;
 /* Awards */
 
 #awardViewer .page-content table td span{
-    color: var(--text-sub) !important;
+    color: hsl(223deg 43% 69%) !important;
 }
+
+#awardViewer .page-content table td strong{
+    color: var(--title) !important;
+}
+
+
 
 /* PLAYER PROFILE - INVENTORY */
 
@@ -1297,7 +1313,7 @@ a:hover{
 }
 
 .content{
-    background-color: #5d5d5d !important;
+    background-color: var(--widget) !important;
     color: var(--text) !important;
 }
 
@@ -1491,7 +1507,11 @@ a:hover{
 
 
 .kt-portlet .kt-portlet__head .kt-portlet__head-label .kt-portlet__head-title small{
-	color: var(--text-sub) !important;
+	color: var(--text) !important;
+}
+
+.kt-portlet__body div small{
+    color: var(--text) !important;
 }
 
 
@@ -1564,4 +1584,9 @@ a:hover{
 /* leaderboards borders */
 #leaderboards-menu .kt-grid-nav .kt-grid-nav__row .kt-grid-nav__item{
     border-color: var(--body) !important;
+}
+
+
+[data-tooltip]:before, .tooltip:before, .tooltip-top:before{
+    border-top-color: hsl(180deg 0% 45%);
 }
