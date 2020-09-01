@@ -30,8 +30,8 @@
     --button-brand: hsl(224deg 31% 27%);
     --button-brand-hover: hsl(224deg 31% 23%);
     --button-disabled: #b9b9b9; 
-
-    --button-kg-brand: #2b4a98;
+    --kt-bg-brand: #2b4a98;
+    --kt-bg-success: #0b3636;
     
     /* popup */
     --popup: hsl(0deg 0% 12%); 
@@ -582,7 +582,7 @@ background-color: var(--navbar) !important;
 }
 
 .notice span{
-    color: var(--text) !important;
+    color: var(--text);
 }
 
 
@@ -729,8 +729,13 @@ background-color: var(--navbar) !important;
 }
 
 .kt-bg-brand{
-    background-color: var(--button-kg-brand) !important;
+    background-color: var(--kt-bg-brand) !important;
 }
+
+.kt-bg-success{
+	    background-color: var(--kt-bg-success) !important;
+}
+
 
 .btn.btn-clean{
     color: #447cbb;
@@ -1249,6 +1254,10 @@ background-color: var(--navbar) !important;
     border: 1px solid var(--alert-info);
 }
 
+.alert.alert-success .alert-text{
+	color: var(--text-button) !important;
+}
+
 .label-info {
     background-color: var(--label-info) !important;
 }
@@ -1561,6 +1570,23 @@ a:hover{
     color: var(--text);
 }
 
+/* BA name & level */
+
+.kt-widget7.kt-widget7--skin-light .kt-widget7__info .kt-widget7__username{
+	 color: var(--title) !important;
+}
+
+.kt-widget7.kt-widget7--skin-light .kt-widget7__info .kt-widget7__time{
+    color: var(--title) !important;
+}
+
+.kt-widget25 .kt-widget25__items .kt-widget25__item .kt-widget25__number{
+    color: var(--title) !important;
+}
+
+.kt-widget25 .kt-widget25__items .kt-widget25__item .kt-widget25__desc{
+	color: var(--title) !important;
+}
 
 
 /* color fix - only common for now */
