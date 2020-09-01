@@ -27,8 +27,8 @@
     --button-danger-hover: hsl(340deg 58% 24%);
     --button-primary: hsl(224deg 31% 27%);
     --button-primary-hover: hsl(224deg 31% 23%);
-    --button-brand: hsl(232deg 75% 55% / 32%); 
-    --button-brand-hover:hsl(232deg 75% 55% / 24%);
+    --button-brand: hsl(224deg 31% 27%);
+    --button-brand-hover: hsl(224deg 31% 23%);
     --button-disabled: #b9b9b9; 
 
     --button-kg-brand: #2b4a98;
@@ -46,7 +46,7 @@
 
     /* alerts */
 
-    --alert-success:#2c867c;
+    --alert-success: #1d4f49;
     --alert-info: #3854af;
 
     /* labels */
@@ -165,7 +165,7 @@ body{
     color: var(--text);
 }
 
-/* removed as I fixed it by putting the thiny above */
+/* only if the top bg image can be seen */
 /*body:after {
     content: "";
     position: absolute;
