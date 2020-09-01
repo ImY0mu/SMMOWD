@@ -921,7 +921,7 @@ background-color: var(--navbar) !important;
 }
 
 .kt-widget.kt-widget--user-profile-4 .kt-widget__body .kt-widget__item.kt-widget__item--active{
-	background: #212121 !important;
+	background: hsl(0 0% 7% / 1) !important
 }
 
 .kt-widget31 .kt-widget31__item .kt-widget31__content .kt-widget31__info .kt-widget31__text{
@@ -969,6 +969,10 @@ background-color: var(--navbar) !important;
 
 #kt_user_profile_aside .text-center span{
 	color: var(--text) !important;
+}
+
+#kt_user_profile_aside .text-center .label{
+	color: var(--title) !important;
 }
 
 /*INBOX - Speech buble*/
@@ -1262,6 +1266,10 @@ background-color: var(--navbar) !important;
 	color: var(--text-button) !important;
 }
 
+.label{
+    color: #fff !important
+}
+
 .label-info {
     background-color: var(--label-info) !important;
 }
@@ -1484,9 +1492,6 @@ a:hover{
 }
 
 
-.label{
-	color: #fff !important;
-}
  /* God profile moto */
 #kt_user_profile_aside .fullPanelTwo{
 	background-color: var(--body) !important;
