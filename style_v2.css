@@ -1052,6 +1052,19 @@ background-color: var(--navbar) !important;
     box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.15);
 }
 
+.kt-widget27__btn .btn-light {
+    color: var(--link) ;
+    background-color: var(--body) ;
+    border-color: var(--body) ; 
+}
+
+.kt-widget27 .kt-widget27__visual .kt-widget27__btn .btn:active, .kt-widget27 .kt-widget27__visual .kt-widget27__btn .btn:focus, .kt-widget27 .kt-widget27__visual .kt-widget27__btn .btn:hover{
+    background-color: var(--item-hover);
+    box-shadow: 0 9px 16px 0 rgba(0,0,5,.25)!important;
+}
+
+
+
 /* Awards */
 
 #awardViewer .page-content table td span{
