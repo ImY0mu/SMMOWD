@@ -88,11 +88,15 @@
     --diamondstore-desc: #5db539;
     --diamondstore-hexagon-outer: #1d1d1d;
     --diamondstore-hexagon-inner: #505050;
+    
+    /* awards */
+    
+    --award-desc: hsl(223deg 43% 69%);
 
 
     /* Online Players */
     --onlineplayers-username: var(--title-sub);
-    --onlineplayers-lastOnline: #a2a2a2;
+    --onlineplayers-lastOnline: var(--award-desc);
     --onlineplayers-title: var(--title-sub);
 
 
@@ -995,7 +999,7 @@ background-color: var(--navbar) !important;
 /* ----------- PLAYER PROFILE ----------- */
 
 .kt-grid__item.kt-app__content .mb-2 .col-xs-12 .mdl-data-table td span{
-	color: hsl(223deg 43% 69%) !important;
+	color: var(--award-desc) !important;
 }
 
 .kt-grid__item .mb-2 .col-xs-12 .mdl-data-table td strong{
@@ -1047,7 +1051,7 @@ background-color: var(--navbar) !important;
 /* Awards */
 
 #awardViewer .page-content table td span{
-    color: hsl(223deg 43% 69%) !important;
+    color: var(--award-desc) !important;
 }
 
 #awardViewer .page-content table td strong{
