@@ -1644,3 +1644,12 @@ a:hover{
 [data-tooltip]:before, .tooltip:before, .tooltip-top:before{
     border-top-color: hsl(180deg 0% 45%);
 }
+
+/* jobs item icons bg */
+.kt-notification-v2 .kt-notification-v2__item .kt-notification-v2__item-icon{
+	background-color: hsl(0deg 0% 20%) !important;
+}
+
+.kt-notification-v2 .kt-notification-v2__item:hover .kt-notification-v2__item-icon{
+	    background-color: hsl(0deg 0% 25%) !important;
+}
