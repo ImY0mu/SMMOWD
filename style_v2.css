@@ -967,6 +967,10 @@ background-color: var(--navbar) !important;
 	color: var(--text) !important;
 }
 
+#kt_chat_content .col-xs-offset-1 span{
+	color: #fff !important;
+}
+
 #kt_user_profile_aside .text-center span{
 	color: var(--text) !important;
 }
@@ -977,16 +981,16 @@ background-color: var(--navbar) !important;
 
 /*INBOX - Speech buble*/
 .speech-bubble-them{
-    color: rgb(255, 255, 255) !important;
-    background: #4a4a4a !important;
+    color: hsl(0 0% 80% / 1) !important;
+    background: hsl(0deg 0% 20%) !important;
 }
 
 .speech-bubble-them:after{
-    border-right-color: #4a4a4a !important;
+    border-right-color: hsl(0deg 0% 20%) !important;
 }
 
 .speech-bubble-you{
-    color: rgb(255, 255, 255) !important;
+    color: hsl(0 0% 80% / 1) !important;
 }
 
 .col-md-8 .demo-card-wide{
