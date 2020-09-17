@@ -91,7 +91,7 @@ body {
   color: var(--text) !important;
 }
 .demo-card-wide > .mdl-card__title {
-  background-color:#666 !important;
+  background-color:var(--widget) !important;
 }
 .mdl-card__supporting-text {
   background-color:var(--base) !important;
@@ -112,10 +112,10 @@ body {
 }
 .speech-bubble {
   color: var(--text) !important;
-  background:#666 !important;
+  background:var(--widget) !important;
 }
 .speech-bubble:after {
-  border-top-color:#666 !important;
+  border-top-color:var(--widget) !important;
 }
 .sidenav {
   background-color: var(--widget) !important;
@@ -127,7 +127,7 @@ button {
   color:rgba(0, 0, 0, 0.7);
 }
 .mdl-card__actions.mdl-card--border {
-  background-color:#666 !important;
+  background-color:var(--widget) !important;
 }
 .materialRow {
   background-color:var(--widget) !important;
@@ -406,6 +406,7 @@ blockquote {
 }
 .btn-default {
   color: var(--text-button) !important;
+  background: hsl(0deg 0% 8%) !important;
 }
 .btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default {
   background: var(--button-info);
@@ -470,16 +471,12 @@ blockquote {
   background-color: var(--button-danger);
 }
 .btn-secondary {
-  background-color: var(--button-success);
+  background-color: hsl(141deg 51% 20%);
   border: 1px rgba(0,0,0,.2) solid;
   color: var(--text-button);
 }
 .btn-secondary:focus {
   color: var(--text-button);
-}
-.app-btn:disabled {
-    background: rgb(56, 56, 56) !important;
-    color: rgb(177, 177, 177) !important;
 }
 /* ALERTS */
 .alert.alert-success {
