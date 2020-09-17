@@ -477,6 +477,10 @@ blockquote {
 .btn-secondary:focus {
   color: var(--text-button);
 }
+.app-btn:disabled {
+    background: rgb(56, 56, 56) !important;
+    color: rgb(177, 177, 177) !important;
+}
 /* ALERTS */
 .alert.alert-success {
   background: var(--alert-success);
