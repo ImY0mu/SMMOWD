@@ -258,7 +258,7 @@ blockquote {
 }
 .app-btn:disabled {
   background:rgb(56, 56, 56);
-  color:rgb(177, 177, 177);
+  color:rgba(177, 177, 177,0.8) !important;
 }
 .app-input {
   background: var(--textarea);
@@ -310,7 +310,7 @@ blockquote {
   color:rgba(0, 0, 0, 0.6);
 }
 .mdl-menu {
-  backgroundvar(--widget);
+  background:var(--widget);
 }
 .mdl-menu, .mdl-menu--bottom-right, .mdl-js-menu, .mdl-js-ripple-effect, .mdl-js-ripple-effect--ignore-events {
   background:var(--widget);
@@ -327,9 +327,6 @@ blockquote {
   background-color: var(--widget);
 }
 #guildBlock {
-  background-color: var(--widget);
-}
-#guildBlock2 {
   background-color: var(--widget);
 }
 #app-page-padding {
@@ -406,7 +403,7 @@ blockquote {
 }
 .btn-default {
   color: var(--text-button) !important;
-  background: hsl(0deg 0% 8%) !important;
+  background: rgba(255,255,255,0.2) !important;
 }
 .btn-default.active, .btn.btn-default:active, .btn.btn-default:hover, .show>.btn.btn-default {
   background: var(--button-info);
@@ -471,7 +468,7 @@ blockquote {
   background-color: var(--button-danger);
 }
 .btn-secondary {
-  background-color: hsl(141deg 51% 20%);
+  background: rgba(255,255,255,0.2) !important;
   border: 1px rgba(0,0,0,.2) solid;
   color: var(--text-button);
 }
@@ -486,4 +483,7 @@ blockquote {
 .alert.alert-info {
   background: var(--alert-info);
   border: 1px solid var(--alert-info);
+}
+hr{
+  border-top:1px solid rgb(78, 78, 78);
 }
