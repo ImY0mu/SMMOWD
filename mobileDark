@@ -5,6 +5,7 @@
   --textarea: hsl(0deg 0% 20%);
   --title: hsl(0, 0%, 90%);
   --text: hsl(0, 0%, 86%);
+  --subtext: hsl(0, 0%, 75%);
   --text-button: hsl(0 0% 87%);
   --white: rgba(255, 255, 255);
   /* BUTTONS */
@@ -486,4 +487,13 @@ blockquote {
 }
 hr{
   border-top:1px solid rgb(78, 78, 78);
+}
+.smmo-widget__title{
+  color: var(--text);
+}
+.smmo-widget__value{
+  color: var(--subtext);
+}
+.popup-labels{
+  color: var(--subtext);
 }
